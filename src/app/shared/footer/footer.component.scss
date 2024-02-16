@@ -1,0 +1,51 @@
+@import '../../../styles.scss';
+
+.footer {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top: 2px solid;
+    border-color: $myGreen;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-shadow: 1px 1px 2px;
+}
+
+.logo {
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-name {
+    font-size: 32px;
+}
+
+
+.imprint {
+    >a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+
+        &:hover {
+            color: $myPurple;
+            transition: all 0.225s ease-in-out;
+            text-shadow: 1px 1px 2px;
+            transform: scale(1.2);
+        }
+    }
+
+}
+
+.footer-symbols {
+    margin-right: 150px;
+}
