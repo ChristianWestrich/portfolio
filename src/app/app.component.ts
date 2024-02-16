@@ -7,7 +7,8 @@ import { MyskillsComponent } from './myskills/myskills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { ImprintComponent } from './imprint/imprint.component';
+import { ImprintComponent } from './shared/imprint/imprint.component';
+
 
 
 
