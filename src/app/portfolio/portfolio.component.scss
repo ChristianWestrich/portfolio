@@ -1,0 +1,42 @@
+@import '../../styles.scss';
+
+.portfolio-content {
+    position: relative
+}
+
+.portfolio-headline {
+    display: flex;
+    margin-top: 250px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+};
+
+
+.portfolio-text {
+    @include dFlex();
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.purple-shadow-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    z-index: -1;
+}
+
+.green-shadow-bottom {
+    position: absolute;
+    top: 350px;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    z-index: -1;
+}

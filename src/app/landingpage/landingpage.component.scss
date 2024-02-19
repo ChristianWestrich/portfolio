@@ -46,7 +46,7 @@
 #left-side-img {
     width: 650px;
     height: 800px;
-    z-index: 9999;
+    z-index: 2;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     filter: drop-shadow(1px 1px 20px);
@@ -59,7 +59,6 @@
     z-index: 2;
     margin-right: 150px;
     width: 50%;
-    max-width: 50%;
 }
 
 .headline {

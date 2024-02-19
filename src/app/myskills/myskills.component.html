@@ -1,1 +1,24 @@
-<p>myskills works!</p>
+<div class="content-skills">
+    <div id="skills" class="left-side">
+        <div class="icon-wrapper">
+            @for (icon of skillIcons; track icon; let i = $index) {
+                <app-skill-icons [iconSrc]="skillIcons[i].iconSrc" [iconName]="skillIcons[i].iconName"></app-skill-icons>
+            }
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="right-content-box">
+            <div class="skill-container">
+                <div class="my-skills">My skills</div>
+                <div class="text-box"> I have gained experience in building projects with various front end technologies and concepts.</div>
+                <app-button class="get-in-touch-btn" [btnText]="GetInTouch"></app-button>
+            </div>
+            <div class="img-box">
+                <img src="../../assets/img/line-myskills.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="shadow-green">
+        <img src="../../assets/img/Green shadow 3 (skills and portfolio section).png" alt="">
+    </div>
+</div>

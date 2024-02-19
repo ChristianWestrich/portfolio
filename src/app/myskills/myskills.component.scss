@@ -1,0 +1,77 @@
+@import '../../styles.scss';
+
+
+.content-skills{
+    @include dFlex();
+    margin-top: 250px;
+    position: relative;
+}
+
+.left-side {
+    width: 50%;
+    @include dFlex();
+    margin-left: 150px;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+}
+
+.right-side {
+    width: 50%;
+    flex-direction: column;
+}
+
+.my-skills {
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: end !important;
+    width: 100%;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 480px;
+    flex-direction: column;
+    margin-right: 50px;
+    
+}
+
+.text-box {
+    font-size: 16px;
+    font-weight: 400px;
+    color: white;
+    text-align: end
+}
+
+.right-content-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row !important;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-in-touch-btn {
+    margin-top: 50px;
+}
+
+.shadow-green img{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+
+}
