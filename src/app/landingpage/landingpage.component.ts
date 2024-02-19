@@ -16,4 +16,11 @@ import { ContactComponent } from '../contact/contact.component';
 export class LandingpageComponent {
 
   btnText = "Let´s talk!"
+
+  goTo(destination: string) {
+    let target = document.querySelector(destination);
+    if (target) {
+      target.scrollIntoView();
+    }
+  }
 }
