@@ -28,9 +28,9 @@
 },
 "aboutme": {
     "headline": "About Me",
-    "description": "Hi, I am a Full-Stack-Developer based near Nueremberg.",
-    "ideas": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed nisi vitae laborum consequuntur accusamus praesentium magni esse deleniti maiores molestias odit ex harum qui, impedit, eaque expedita quae obcaecati?",
-    "puzzle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla enim dolore ducimus perspiciatis necessitatibus debitis praesentium reiciendis animi in natus, unde maxime voluptatem, quo ipsa dolorem minima repellat porro."
+    "description": "Hi, I'm a full-stack developer from the Nuremberg area. Computers & technology have always been a great passion of mine. I would like to share this passion with others.",
+    "ideas": "I love to create something new from an idea, to support and inspire people in their daily tasks through creative applications.",
+    "puzzle": "To this end, I have learned new technologies through my further training in order to not only build functional applications, but also to round them off with an appealing design and user-friendly operation."
 },
 "contact": {
     "contact":"Contact",

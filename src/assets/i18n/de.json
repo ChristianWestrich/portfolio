@@ -24,9 +24,9 @@
     },
     "aboutme": {
         "headline": "Das bin ich !",
-        "description": "Hi, ich bin ein Full-Stack-Entwickler aus dem Raum Nürnberg.",
-        "ideas": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed nisi vitae laborum consequuntur accusamus praesentium magni esse deleniti maiores molestias odit ex harum qui, impedit, eaque expedita quae obcaecati?",
-        "puzzle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla enim dolore ducimus perspiciatis necessitatibus debitis praesentium reiciendis animi in natus, unde maxime voluptatem, quo ipsa dolorem minima repellat porro."
+        "description": "Hi, ich bin ein Full-Stack-Entwickler aus dem Raum Nürnberg. Computer & Technik sind schon immer eine große Leideschaft von mir gewesen. Diese Leidenschaft möchte ich mit anderen Teilen.",
+        "ideas": "Ich liebe es aus einer Idee etwas neues zu erschaffen, durch kreative Applikationen Menschen bei Ihren täglichen Aufgaben zu unterstützen und zu begeistern.",
+        "puzzle": "Hierfür habe ich durch meine Weiterbildung neue Technologien kennengelernt um nicht nur funktionelle Applikation zu bauen, sondern diese auch durch ansprechendes Design und benutzerfreundliche Bedienung abzurunden."
     },
     "portfolio": {
         "headline": "Diese Seite ist ein Beispiel für meine Arbeit - bitte probieren Sie sie aus.",
