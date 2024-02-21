@@ -1,7 +1,15 @@
+
+.content {
+    padding-left:320px;
+    padding-right: 320px;
+    height: 100vh;
+    max-width: 1920px;
+
+}
+
 * {
     color: white;
     font-family: 'Poppins';
-
     >a {
         color: #9747ff;
     }
