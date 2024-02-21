@@ -1,4 +1,18 @@
-/* poppins-100 - latin */
+
+$myGreen: #70E61C;
+$myLightBlue: #1cdae6;
+$myPurple: #9747ff;
+$myDarkBlue: #141d2f;
+$myDarKBlueTransparent: rgba(20, 29, 47, 0.8);
+
+@mixin dFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -207,16 +221,19 @@ body {
 html {
   font-family: 'Poppins';
   scroll-behavior: smooth;
-}
+  &::-webkit-scrollbar {
+    width: 10px;
+    background: $myDarkBlue;
+    height: 100%;
 
-$myGreen: #70E61C;
-$myLightBlue: #1cdae6;
-$myPurple: #9747ff;
-$myDarkBlue: #141d2f;
-$myDarKBlueTransparent: rgba(20, 29, 47, 0.8);
-
-@mixin dFlex() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: $myGreen;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: $myDarkBlue;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  }
 }

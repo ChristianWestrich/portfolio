@@ -5,7 +5,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectsComponent, TranslateModule],
+  imports: [ProjectsComponent, TranslateModule, ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
@@ -32,7 +32,7 @@ export class PortfolioComponent {
       imgLink: '../../assets/img/join.png',
     },
     {
-      projectName: 'El Polo Loco',
+      projectName: 'El Pollo Loco',
       language: 'JavaScript, HTML, CSS',
       description: "{{'portfolio.description' | translate}}",
       liveLink: '',
@@ -40,4 +40,9 @@ export class PortfolioComponent {
       imgLink: '../../assets/img/elpololoco.png',
     },
   ];
+
+
+
+
 }
+
