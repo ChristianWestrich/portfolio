@@ -2,16 +2,16 @@
     <div id="skills" class="left-side">
         <div class="icon-wrapper">
             @for (icon of skillIcons; track icon; let i = $index) {
-                <app-skill-icons [iconSrc]="skillIcons[i].iconSrc" [iconName]="skillIcons[i].iconName"></app-skill-icons>
+            <app-skill-icons [iconSrc]="skillIcons[i].iconSrc" [iconName]="skillIcons[i].iconName"></app-skill-icons>
             }
         </div>
     </div>
     <div class="right-side">
         <div class="right-content-box">
             <div class="skill-container">
-                <div class="my-skills">My skills</div>
-                <div class="text-box"> I have gained experience in building projects with various front end technologies and concepts.</div>
-                <app-button class="get-in-touch-btn" [btnText]="GetInTouch"></app-button>
+                <div class="my-skills">{{"skills.skill" | translate}}</div>
+                <div class="text-box">{{'skills.experience' | translate}}</div>
+                <app-button class="get-in-touch-btn" [btnText]="GetInTouch" (click)="goTo('#contact')"></app-button>
             </div>
             <div class="img-box">
                 <img src="../../assets/img/line-myskills.png" alt="">

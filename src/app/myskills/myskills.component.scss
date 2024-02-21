@@ -1,9 +1,10 @@
 @import '../../styles.scss';
 
 
-.content-skills{
+.content-skills {
     @include dFlex();
     margin-top: 250px;
+    max-width: 1440px;
     position: relative;
 }
 
@@ -26,7 +27,7 @@
 
 .my-skills {
     color: white;
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 700;
     text-align: end !important;
     width: 100%;
@@ -38,8 +39,8 @@
     align-items: center;
     width: 480px;
     flex-direction: column;
-    margin-right: 50px;
-    
+    margin-right: 150px;
+
 }
 
 .text-box {
@@ -66,7 +67,7 @@
     margin-top: 50px;
 }
 
-.shadow-green img{
+.shadow-green img {
     position: absolute;
     left: 150px;
     top: 50px;

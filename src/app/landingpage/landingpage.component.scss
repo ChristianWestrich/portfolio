@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 1440px;
     height: 60vh;
     position: relative;
 
@@ -23,8 +23,6 @@
     z-index: -1;
     filter: drop-shadow(-1px -1px 20px);
 }
-
-
 
 .lp-left-side {
     background-image: url('../../assets/img/shadow_landingpage.png');
@@ -52,7 +50,6 @@
     filter: drop-shadow(1px 1px 20px);
 
 }
-
 
 .lp-right-side {
     display: flex;
@@ -88,7 +85,6 @@
     height: fit-content;
 }
 
-
 .name {
     color: white;
     font-weight: 700;
@@ -108,7 +104,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 100vw;
+    max-width: 1440px;
+    position: relative;
 }
 
 .symbols {
@@ -135,7 +132,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 100px;
+    position: absolute;
+    right: 150px;
 
     >.arrows {
         padding-left: 5px;

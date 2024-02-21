@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './symbols.component.html',
-  styleUrl: './symbols.component.scss'
+  styleUrl: './symbols.component.scss',
 })
-export class SymbolsComponent {
-
-}
+export class SymbolsComponent {}

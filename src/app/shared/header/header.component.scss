@@ -19,31 +19,41 @@
     left: 0;
     z-index: 99;
     background-color: $myDarkBlue;
-
-
+    max-width: 1440px;
 }
 
 .logo {
     font-size: 32px
 }
 
+.language-select {
+    text-align: center;
+    background-image: url(../../../assets/img/german-flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
 
 .menu {
     @include dFlex();
     font-weight: 400;
     font-size: 23px;
     gap: 29px;
-    width: 326px;
+    width: fit-content;
     height: 32px;
     cursor: pointer;
 
     >a {
         text-decoration: none;
     }
+
     >:hover {
         transition: all 0.225s ease-in-out;
         color: $myPurple;
         text-shadow: 1px 1px 2px;
-        transform: scale(1.2);       
+        transform: scale(1.2);
     }
 }

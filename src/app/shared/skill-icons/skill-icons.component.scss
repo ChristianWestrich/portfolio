@@ -2,10 +2,12 @@
     width: 88px;
     height: 100px;
     color: white;
+
     >img {
         width: 60px;
         height: 60px;
     }
+
     &:hover {
         transform: translateY(-20px);
         transition: all 0.225s ease-in-out;

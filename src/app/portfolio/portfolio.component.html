@@ -4,10 +4,12 @@
         <span>Portfolio</span>
         <img src="../../assets/img/portfolio-right-line.png" alt="">
     </div>
-    <div class="portfolio-text">This page is a sample of my work - please feel free to try them out.</div>
+    <div class="portfolio-text">{{"portfolio.headline" | translate}}</div>
     <div class="project-wrapper">
         @for (project of projects; track project; let i = $index) {
-            <app-projects [imgLink]="projects[i].imgLink" [projectName]="projects[i].projectName" [usedLanguage]="projects[i].language" [description]="projects[i].description" [liveLink]="projects[i].liveLink" [gitLink]="projects[i].gitLink"></app-projects>
+        <app-projects [imgLink]="projects[i].imgLink" [projectName]="projects[i].projectName"
+            [usedLanguage]="projects[i].language" [description]="projects[i].description"
+            [liveLink]="projects[i].liveLink" [gitLink]="projects[i].gitLink"></app-projects>
         }
     </div>
     <div class="purple-shadow-top">

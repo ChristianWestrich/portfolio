@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 
-.content{
+.content {
     @include dFlex();
     flex-direction: row;
 }
@@ -8,7 +8,8 @@
 .left-side {
     @include dFlex();
     width: 50%;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
 
 .right-side {
@@ -51,6 +52,7 @@
     color: white;
     border-radius: 10px;
     padding: 15px, 30px, 15px, 30px;
+
     &:hover {
         cursor: pointer;
         background-color: $myGreen;
@@ -65,8 +67,9 @@
     background-color: transparent;
     color: white;
     border-radius: 10px;
-    border: 1px solid  $myGreen;
-    padding: 15px, 30px, 15px ,30px;
+    border: 1px solid $myGreen;
+    padding: 15px, 30px, 15px, 30px;
+
     &:hover {
         cursor: pointer;
         background-color: $myGreen;

@@ -5,15 +5,9 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './skill-icons.component.html',
-  styleUrl: './skill-icons.component.scss'
+  styleUrl: './skill-icons.component.scss',
 })
-
-
- 
 export class SkillIconsComponent {
-
-@Input() iconSrc:string = "";
-@Input() iconName:string = "";
-
+  @Input() iconSrc: string = '';
+  @Input() iconName: string = '';
 }
-

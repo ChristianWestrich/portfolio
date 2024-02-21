@@ -1,8 +1,10 @@
 <div class="header">
-    <div class="logo"><span>Chr</span><span style="color: #70e61c">i</span><span>st</span><span style="color: #9747ff">i</span><span>an</span></div>
+    <div class="logo"><span>Chr</span><span style="color: #70e61c">i</span><span>st</span><span
+            style="color: #9747ff">i</span><span>an</span></div>
     <div class="menu">
-        <a (click)="goTo('#aboutMe')" class="aboutMe">About Me</a>
-        <a (click)="goTo('#skills')" class="skills">Skills</a>
-        <a (click)="goTo('#portfolio')" class="portfolio">Portfolio</a>
+        <a [routerLink]="['/']" (click)="goTo('#aboutMe')" class="aboutMe">{{'header.about' | translate}}</a>
+        <a [routerLink]="['/']" (click)="goTo('#skills')" class="skills">Skills</a>
+        <a [routerLink]="['/']" (click)="goTo('#portfolio')" class="portfolio">Portfolio</a>
+        <div class="language-select" (click)="translating()">{{language}}</div>
     </div>
 </div>

@@ -1,7 +1,9 @@
 @import '../../styles.scss';
 
 .portfolio-content {
-    position: relative
+    position: relative;
+    max-width: 1440px;
+    overflow-x: hidden;
 }
 
 .portfolio-headline {
@@ -13,8 +15,7 @@
     color: white;
     font-size: 90px;
     font-weight: 700;
-};
-
+}
 
 .portfolio-text {
     @include dFlex();

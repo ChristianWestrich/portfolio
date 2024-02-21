@@ -9,13 +9,19 @@ import { ContactComponent } from '../contact/contact.component';
 @Component({
   selector: 'app-landingpage',
   standalone: true,
-  imports: [ButtonComponent, SymbolsComponent, AboutmeComponent, MyskillsComponent, PortfolioComponent, ContactComponent],
+  imports: [
+    ButtonComponent,
+    SymbolsComponent,
+    AboutmeComponent,
+    MyskillsComponent,
+    PortfolioComponent,
+    ContactComponent,
+  ],
   templateUrl: './landingpage.component.html',
-  styleUrl: './landingpage.component.scss'
+  styleUrl: './landingpage.component.scss',
 })
 export class LandingpageComponent {
-
-  btnText = "Let´s talk!"
+  btnText = 'Let´s talk!';
 
   goTo(destination: string) {
     let target = document.querySelector(destination);
