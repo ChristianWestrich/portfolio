@@ -83,7 +83,7 @@
     rotate: 270deg;
     width: fit-content;
     height: fit-content;
-    animation: falling-top 2s ease-in-out;
+    animation: falling-top 1.5s ease-in-out;
 }
 
 .name {
@@ -91,7 +91,7 @@
     font-weight: 700;
     font-size: 68px;
     width: 100%;
-    animation: coming-right 2s ease-in-out;
+    animation: coming-right 1.5s ease-in-out;
 }
 
 .profession {
@@ -99,13 +99,13 @@
     font-weight: 400;
     font-size: 48px;
     width: 100%;
-    animation: pendulum-bottom 2s ease-in-out;
+    animation: pendulum-bottom 1.5s ease-in-out;
 }
 
 @keyframes falling-top {
     0% {
         top: -250px;
-        transform: rotate(180deg) scale(2);
+        transform: scale(2);
         opacity: 0;
     }
 }
@@ -115,6 +115,7 @@
         transform: translateX(300px) rotate(180deg) scale(2);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0) rotate(0deg) scale(1);
         opacity: 1;
@@ -124,34 +125,11 @@
 @keyframes pendulum-bottom {
     0% {
         transform-origin: 70% 0%;
-        rotate:(-90deg);
-        scale:(1);
+        rotate: (-90deg);
+        scale: (1);
         color: $myGreen;
     }
-    20% {
-        transform-origin: 70% 0%;
-        rotate:(-50deg);
-        scale:(1.5);
-        color: $myPurple;
-    }
-    40% {
-        transform-origin: 70% 0%;
-        rotate:(-130deg); 
-        scale:(1);
-        color: $myGreen;
-    }
-    60% {
-        transform-origin: 70% 0%;
-        rotate:(-50deg);
-        scale:(1.5);
-        color: $myPurple;
-    }
-    80% {
-        transform-origin: 70% 0%;
-        rotate:(-130deg);
-        scale:(1);
-        color: $myGreen;
-    }
+
 }
 
 
