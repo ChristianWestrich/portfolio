@@ -3,13 +3,12 @@
 .content {
     @include dFlex();
     flex-direction: row;
+    overflow: hidden
 }
 
 .left-side {
     @include dFlex();
     width: 50%;
-    cursor: pointer;
-    
 }
 
 
@@ -76,4 +75,50 @@
         cursor: pointer;
         background-color: $myGreen;
     }
+}
+
+.animation-class-left {
+    animation: waving-left 1s ease-in-out;
+}
+
+@keyframes waving-left {
+    0% {
+        opacity: 0;
+        scale: 0.3;
+        transform: translateX(-235px) translateY(250px);
+    }
+
+    33% {
+        transform: translateX(-150px) translateY(-100px);
+    }
+    66% {
+        transform: translateX(-75px) translateY(250px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0);
+    }
+
+}
+
+.animation-class-right {
+    animation: waving-right 1s ease-in-out;
+}
+
+@keyframes waving-right {
+    0% {
+        opacity: 0;
+        scale: 0.3;
+        transform: translateX(235px) translateY(-250px);
+    }
+
+    33% {
+        transform: translateX(150px) translateY(+100px);
+    }
+    66% {
+        transform: translateX(75px) translateY(-250px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0);
+    }
+
 }

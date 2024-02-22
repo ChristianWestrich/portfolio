@@ -1,11 +1,11 @@
-<div class="portfolio-content">
+<div class="portfolio-content"  >
     <div id="portfolio" class="portfolio-headline">
         <img src="../../assets/img/portfolio-left-line.png" alt="">
         <span>Portfolio</span>
         <img src="../../assets/img/portfolio-right-line.png" alt="">
     </div>
     <div class="portfolio-text">{{"portfolio.headline" | translate}}</div>
-    <div class="project-wrapper">
+    <div class="project-wrapper"  (scroll)="$event">
         @for (project of projects; track project; let i = $index) {
         <app-projects [imgLink]="projects[i].imgLink" [projectName]="projects[i].projectName"
             [usedLanguage]="projects[i].language" [description]="projects[i].description"
