@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './symbols.component.html',
   styleUrl: './symbols.component.scss',
 })
-export class SymbolsComponent {}
+export class SymbolsComponent {
+
+
+  goToLink() {
+    
+  }
+}

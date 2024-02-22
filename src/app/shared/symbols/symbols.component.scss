@@ -3,16 +3,17 @@
 .footer-symbols {
     @include dFlex();
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
     cursor: pointer;
 
-    >img {
-        width: 30px;
-        height: 30px;
-
+    >a {
+        >img {
+        width: 35px;
+        height: 35px;
         &:hover {
             transition: all 0.225s ease-in-out;
             transform: scale(1.5);
+        }
         }
     }
 }
