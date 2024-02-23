@@ -25,19 +25,26 @@
 }
 
 .purple-shadow-top {
+    >img {
     position: absolute;
-    top: 0;
+    bottom: 0;
+    rotate: 90deg;
     left: 0;
-    width: 350px;
-    height: 350px;
+    width: 550px;
+    height: 550px;
     z-index: -1;
+    }
 }
 
 .green-shadow-bottom {
+    >img {
     position: absolute;
-    top: 350px;
+    top: 550px;
     right: 0;
     width: 350px;
     height: 350px;
     z-index: -1;
+    }
 }
+
+

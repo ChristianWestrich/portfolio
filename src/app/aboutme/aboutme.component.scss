@@ -89,3 +89,12 @@
     width: 500px;
     overflow: hidden;
 }
+
+@media (max-width: 1500px) {
+    .headline {
+        font-size: 45px;
+    }
+    .text-boxes {
+        width: 350px;
+    }
+}
