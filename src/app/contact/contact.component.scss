@@ -99,8 +99,6 @@
 
 }
 
-
-
 @keyframes pulsation {
     0% {
         opacity: 0;
@@ -113,4 +111,28 @@
     100% {
         opacity: 0;
     }
+}
+
+@media (max-width: 1500px) {
+    .contact-headline {
+        font-size: 68px;
+    }
+
+    .text-container {   
+        >.header {
+            font-size: 24px;
+        }
+    
+        >.left-side-content {
+            font-size: 16px;
+            font-weight: 400;
+            padding-bottom: 50px;
+        }
+    
+        >.bottom-line a {
+            text-decoration: none;
+            color: $myGreen;
+        }
+    }
+    
 }

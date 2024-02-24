@@ -106,3 +106,15 @@
 
 
 }
+
+@media (max-width: 1500px) {
+    .left-side {
+    >img { 
+        width: 350px;
+        height: 350px;
+    };
+    }
+    .right-side {
+        width: 400px;
+    }
+}
