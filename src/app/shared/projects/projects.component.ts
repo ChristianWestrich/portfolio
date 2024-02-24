@@ -7,13 +7,10 @@ import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent implements OnInit, OnDestroy{
-
-
+export class ProjectsComponent implements OnInit, OnDestroy {
   observer?: IntersectionObserver;
 
-  constructor(private elementRef: ElementRef) { }
-
+  constructor(private elementRef: ElementRef) {}
 
   @Input() projectName: string = '';
   @Input() usedLanguage: string = '';
@@ -22,11 +19,10 @@ export class ProjectsComponent implements OnInit, OnDestroy{
   @Input() gitLink: string = '';
   @Input() imgLink: string = '';
 
-
   ngOnInit(): void {
-    const options = {threshold: 0.4};
-    this.observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    const options = { threshold: 0.6, rootMargin: '10px 0px 0px 0px' };
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (entry.target.classList.contains('left-side')) {
             entry.target.classList.add('animation-class-left');
@@ -39,18 +35,17 @@ export class ProjectsComponent implements OnInit, OnDestroy{
         }
       });
     }, options);
-  
-    let targetElements: NodeListOf<HTMLElement> = this.elementRef.nativeElement.querySelectorAll('.left-side, .right-side');
-    targetElements.forEach(targetElement => {
+
+    let targetElements: NodeListOf<HTMLElement> =
+      this.elementRef.nativeElement.querySelectorAll('.left-side, .right-side');
+    targetElements.forEach((targetElement) => {
       this.observer?.observe(targetElement);
     });
-
   }
 
-ngOnDestroy(): void {
-  if (this.observer) {
-    this.observer.disconnect();
-  }}
-
-
+  ngOnDestroy(): void {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
 }

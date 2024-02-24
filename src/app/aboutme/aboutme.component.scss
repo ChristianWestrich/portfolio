@@ -89,3 +89,15 @@
     width: 500px;
     overflow: hidden;
 }
+
+.animation-coming-in {
+    animation: coming-in 1s ease-in-out;
+}
+
+@keyframes coming-in {
+    0% {
+        opacity: 0.5;
+        scale: 0.1;
+        transform: translateY(-250px);
+    }
+}

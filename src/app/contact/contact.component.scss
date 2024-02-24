@@ -81,6 +81,14 @@
         animation: pulsation 2s infinite;
         width: 50px;
         height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &::after {
+            content: 'UP';
+            color: white;
+        }
 
         >:hover {
             cursor: pointer;

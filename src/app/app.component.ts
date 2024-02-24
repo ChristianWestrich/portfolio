@@ -19,7 +19,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 
 
-export class AppComponent {
+export class AppComponent  {
   title = 'portfolio';
 
   translation = "de";
@@ -27,5 +27,6 @@ export class AppComponent {
   constructor(public translate: TranslateService) {
     translate.setDefaultLang(this.translation);
   }
+
 
 }

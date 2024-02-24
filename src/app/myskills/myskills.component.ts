@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { ButtonComponent } from '../shared/button/button.component';
 import { SkillIconsComponent } from '../shared/skill-icons/skill-icons.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -10,10 +10,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './myskills.component.html',
   styleUrl: './myskills.component.scss',
 })
-export class MyskillsComponent {
+export class MyskillsComponent implements OnDestroy, OnInit {
   GetInTouch: any;
+  observer?: IntersectionObserver;
 
-  constructor(private translateService: TranslateService) {}
+  constructor(
+    private translateService: TranslateService,
+    private elementRef: ElementRef
+  ) {}
 
   goTo(destination: string) {
     let target = document.querySelector(destination);
@@ -28,6 +32,30 @@ export class MyskillsComponent {
       .subscribe((translation: string) => {
         this.GetInTouch = translation;
       });
+    const options = { threshold: 0.8 };
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains('skill-container')) {
+            entry.target.classList.add('animation-coming-in');
+          }
+        } else {
+          entry.target.classList.remove('animation-coming-in');
+        }
+      });
+    }, options);
+
+    let targetElements: NodeListOf<HTMLElement> =
+      this.elementRef.nativeElement.querySelectorAll('.skill-container');
+    targetElements.forEach((targetElement) => {
+      this.observer?.observe(targetElement);
+    });
+  }
+
+  ngOnDestroy(): void {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
   }
 
   skillIcons = [
