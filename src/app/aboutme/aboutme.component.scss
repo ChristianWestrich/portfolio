@@ -14,6 +14,7 @@
     flex-direction: column;
     min-width: 50%;
     height: fit-content;
+    opacity: 0;
 }
 
 
@@ -92,6 +93,7 @@
 
 .animation-coming-in {
     animation: coming-in 1s ease-in-out;
+    opacity: 1;
 }
 
 @keyframes coming-in {

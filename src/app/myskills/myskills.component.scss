@@ -40,6 +40,7 @@
     width: 480px;
     flex-direction: column;
     margin-right: 150px;
+    opacity: 0;
 }
 
 .text-box {
@@ -78,6 +79,7 @@
 
 .animation-coming-in {
     animation: coming-in 1s ease-in-out;
+    opacity: 1;
 }
 
 @keyframes coming-in {
@@ -89,7 +91,7 @@
 }
 
 
-@media (max-width: 1500px){
+@media (max-width: 1500px) {
     .icon-wrapper {
         gap: 60px;
         padding-left: 30px;

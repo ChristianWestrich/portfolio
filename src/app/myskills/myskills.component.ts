@@ -32,7 +32,7 @@ export class MyskillsComponent implements OnDestroy, OnInit {
       .subscribe((translation: string) => {
         this.GetInTouch = translation;
       });
-    const options = { threshold: 0.8 };
+    const options = { threshold: 0.6 };
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {

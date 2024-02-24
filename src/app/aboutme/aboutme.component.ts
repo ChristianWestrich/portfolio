@@ -16,7 +16,7 @@ export class AboutmeComponent implements OnDestroy, OnInit {
   constructor(private elementRef: ElementRef) {}
   
   ngOnInit() {
-    const options = { threshold: 0.8 };
+    const options = { threshold: 0.6 };
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
