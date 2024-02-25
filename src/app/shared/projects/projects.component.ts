@@ -34,7 +34,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
 
 
-    const options = { threshold: 0.6, rootMargin: '10px 0px 0px 0px' };
+    const options = { threshold: 0.5 };
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {

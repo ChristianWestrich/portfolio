@@ -9,14 +9,12 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './aboutme.component.scss',
 })
 export class AboutmeComponent implements OnDestroy, OnInit {
-
-  observer?: IntersectionObserver
-
+  observer?: IntersectionObserver;
 
   constructor(private elementRef: ElementRef) {}
-  
+
   ngOnInit() {
-    const options = { threshold: 0.6 };
+    const options = { threshold: 0.4 };
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -41,5 +39,4 @@ export class AboutmeComponent implements OnDestroy, OnInit {
       this.observer.disconnect();
     }
   }
-
 }
