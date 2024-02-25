@@ -1,32 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectsComponent } from '../shared/projects/projects.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectsComponent, TranslateModule, ],
+  imports: [ProjectsComponent, TranslateModule, CommonModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit{
   constructor(private translateService: TranslateService) {}
 
-  ngOnInit() {
-    for (let i in this.projects) {
-      this.translateService
-        .get(`portfolio.description${[i]}`)
-        .subscribe((translation: string) => {
-          this.projects[i].description = translation;
-        });
-    }
-  }
 
   projects = [
     {
       projectName: 'Join',
       language: 'JavaScript, HTML, CSS',
-      description: '',
+      description: "",
       liveLink: '',
       gitLink: '',
       imgLink: '../../assets/img/join.png',
@@ -34,7 +26,7 @@ export class PortfolioComponent {
     {
       projectName: 'El Pollo Loco',
       language: 'JavaScript, HTML, CSS',
-      description: "{{'portfolio.description' | translate}}",
+      description: "",
       liveLink: '',
       gitLink: '',
       imgLink: '../../assets/img/elpololoco.png',
@@ -43,10 +35,15 @@ export class PortfolioComponent {
 
 
 
-
-
-
+  ngOnInit() {
+    for (let i in this.projects) {
+      this.translateService
+        .get(`portfolio.description${[i]}`)
+        .subscribe((translate: string) => {
+          this.projects[i].description = translate;
+        });
+    }
+  }
 
 
 }
-

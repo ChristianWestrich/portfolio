@@ -1,4 +1,13 @@
-import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Input,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
+
+
 
 @Component({
   selector: 'app-projects',
@@ -8,9 +17,11 @@ import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
+
   observer?: IntersectionObserver;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(
+    private elementRef: ElementRef) {}
 
   @Input() projectName: string = '';
   @Input() usedLanguage: string = '';
@@ -18,26 +29,32 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   @Input() liveLink: string = '';
   @Input() gitLink: string = '';
   @Input() imgLink: string = '';
+  @ViewChild('projectRightSide') rightSideElement!: ElementRef;
 
   ngOnInit(): void {
+
+
     const options = { threshold: 0.6, rootMargin: '10px 0px 0px 0px' };
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (entry.target.classList.contains('left-side')) {
             entry.target.classList.add('animation-class-left');
-          } else if (entry.target.classList.contains('right-side')) {
-            entry.target.classList.add('animation-class-right');
+            this.rightSideElement.nativeElement.classList.add(
+              'animation-class-right'
+            );
           }
         } else {
           entry.target.classList.remove('animation-class-left');
-          entry.target.classList.remove('animation-class-right');
+          this.rightSideElement.nativeElement.classList.remove(
+            'animation-class-right'
+          );
         }
       });
     }, options);
 
     let targetElements: NodeListOf<HTMLElement> =
-      this.elementRef.nativeElement.querySelectorAll('.left-side, .right-side');
+      this.elementRef.nativeElement.querySelectorAll('.left-side');
     targetElements.forEach((targetElement) => {
       this.observer?.observe(targetElement);
     });

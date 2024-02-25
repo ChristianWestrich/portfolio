@@ -21,7 +21,7 @@
             {{'contactform.message' | translate}}</div>
 
         <div class="privacy-policy">
-            <input type="checkbox" id="pp-checkbox" required #checkbox [(ngModel)]="checkboxState">
+            <input type="checkbox" id="pp-checkbox" required #checkbox [(ngModel)]="checkboxState" name="checkboxState">
             <div>{{ "contactform.privacy1" | translate }}<a
                     href="privacyPolicy/">{{'contactform.privacy2' | translate}}</a>{{'contactform.privacy3' | translate}}
             </div>
