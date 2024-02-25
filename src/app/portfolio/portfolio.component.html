@@ -8,7 +8,7 @@
     <div class="project-wrapper"  (scroll)="$event">
         @for (project of projects; track project; let i = $index) {
         <app-projects [imgLink]="projects[i].imgLink" [projectName]="projects[i].projectName"
-            [usedLanguage]="projects[i].language" [description]="projects[i].description | translate"
+            [usedLanguage]="projects[i].language" [description]="'portfolio.description' + i | translate"
             [liveLink]="projects[i].liveLink" [gitLink]="projects[i].gitLink"></app-projects>
         }
     </div>

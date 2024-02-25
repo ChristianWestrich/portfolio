@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormComponent } from './form/form.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

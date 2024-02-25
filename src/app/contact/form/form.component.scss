@@ -138,11 +138,12 @@ form {
     &:active:not(:disabled) {
         background-color: $myPurple !important;
         scale: (1.3);
+        &:hover:not(:disabled) {
+            scale: (1.3);
+        }
     }
 
-    &:hover:not(:disabled) {
-        scale: (1.3);
-    }
+
 }
 
 @media (max-width: 1550px) {
