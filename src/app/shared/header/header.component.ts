@@ -37,4 +37,8 @@ export class HeaderComponent {
       this.language = 'EN';
     }
   }
+
+  openMobileMenu() {
+    
+  }
 }

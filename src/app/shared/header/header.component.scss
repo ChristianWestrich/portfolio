@@ -1,76 +1,104 @@
 * {
-    color: white;
+  color: white;
 }
 
 @import '../../../styles.scss';
 
 
+.logo {
+  font-size: 1.2rem;
+  color: #0e2431;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+  display: none;
+}
+
+
 .header {
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-top: 50px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-shadow: 1px 1px 2px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    background-color: $myDarKBlueTransparent;
-    max-width: 1920px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 1px 1px 2px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: $myDarKBlueTransparent;
+  max-width: 1920px;
 }
 
 .logo {
-    font-size: 32px
+  font-size: 32px;
 }
 
+
 .language-select {
-    text-align: center;
-    background-image: url(../../../assets/img/german-flag.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: transparent;
-    background-clip: text;
-    font-weight: 700;
-    cursor: pointer;
+  text-align: center;
+  background-image: url(../../../assets/img/german-flag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .menu {
-    @include dFlex();
-    font-weight: 400;
-    font-size: 23px;
-    gap: 29px;
-    width: fit-content;
-    height: 32px;
+  @include dFlex();
+  font-weight: 400;
+  font-size: 23px;
+  gap: 29px;
+  width: fit-content;
+  height: 32px;
 }
-    .links{
-    cursor: pointer;
-    position: relative;
-    &::after {
-        content: '';
-        position: absolute;
-        width: 80%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: $myGreen;
-        transform-origin: bottom left;
-        transition: transform 0.25s ease-out;
-      }
 
-      &:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
-      >a {
-        text-decoration: none;
-      }
-    }
+.links {
+  cursor: pointer;
+  position: relative;
 
-    @media (max-width:900px) {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $myGreen;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
 
-    }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  >a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width:900px) {}

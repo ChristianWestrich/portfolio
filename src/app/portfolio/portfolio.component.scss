@@ -3,7 +3,6 @@
 .portfolio-content {
     position: relative;
     max-width: 1920px;
-    overflow-x: hidden;
 }
 
 .portfolio-headline {
@@ -26,25 +25,23 @@
 
 .purple-shadow-top {
     >img {
-    position: absolute;
-    bottom: 0;
-    rotate: 90deg;
-    left: 0;
-    width: 550px;
-    height: 550px;
-    z-index: -1;
+        position: absolute;
+        bottom: 0;
+        rotate: 90deg;
+        left: 0;
+        width: 550px;
+        height: 550px;
+        z-index: -1;
     }
 }
 
 .green-shadow-bottom {
     >img {
-    position: absolute;
-    top: 550px;
-    right: 0;
-    width: 350px;
-    height: 350px;
-    z-index: -1;
+        position: absolute;
+        top: 550px;
+        right: 0;
+        width: 350px;
+        height: 350px;
+        z-index: -1;
     }
 }
-
-
