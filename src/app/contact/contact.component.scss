@@ -85,6 +85,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         &::after {
             content: 'UP';
             color: white;
@@ -118,21 +119,28 @@
         font-size: 68px;
     }
 
-    .text-container {   
+    .text-container {
         >.header {
             font-size: 24px;
         }
-    
+
         >.left-side-content {
             font-size: 16px;
             font-weight: 400;
             padding-bottom: 50px;
         }
-    
+
         >.bottom-line a {
             text-decoration: none;
             color: $myGreen;
         }
     }
-    
+
+}
+
+@media (max-width: 900px) {
+    .content {
+       display: flex;
+        flex-direction: column;
+    }
 }

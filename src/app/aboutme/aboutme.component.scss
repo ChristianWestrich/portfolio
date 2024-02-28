@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 .main-content {
-    max-width: 1920px
+    max-width: 1920px;
 }
 
 .main-content,
@@ -110,5 +110,11 @@
     }
     .text-boxes {
         width: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
     }
 }

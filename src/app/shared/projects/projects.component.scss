@@ -121,3 +121,9 @@
         width: 400px;
     }
 }
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+}

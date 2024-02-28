@@ -100,3 +100,9 @@
         padding-left: 30px;
     }
 }
+
+@media (max-width: 900px) {
+    .content-skills {
+        flex-direction: column;
+    }
+}
