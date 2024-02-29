@@ -8,12 +8,21 @@
 
     >a {
         >img {
-        width: 35px;
-        height: 35px;
-        &:hover {
-            transition: all 0.225s ease-in-out;
-            transform: scale(1.5);
-        }
+            width: 35px;
+            height: 35px;
+
+            &:hover {
+                transition: all 0.225s ease-in-out;
+                transform: scale(1.5);
+            }
         }
     }
+}
+
+@media (max-width: 750px) {
+    .footer-symbols {
+            gap: 20px;
+
+    }
+
 }

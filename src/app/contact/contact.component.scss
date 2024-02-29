@@ -74,30 +74,30 @@
     margin-right: 150px;
     position: relative;
 
-    >.go-up-btn {
-        position: absolute;
-        bottom: 0;
-        right: -100px;
-        animation: pulsation 2s infinite;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+}
 
-        &::after {
-            content: 'UP';
-            color: white;
-        }
+.go-up-btn {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    animation: pulsation 2s infinite;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-        >:hover {
-            cursor: pointer;
-            filter: drop-shadow(1px 1px 5px white);
-            scale: 1.3;
-        }
+    &::after {
+        content: 'UP';
+        color: white;
     }
 
+    >:hover {
+        cursor: pointer;
+        filter: drop-shadow(1px 1px 5px white);
+        scale: 1.3;
+    }
 }
 
 @keyframes pulsation {
@@ -138,9 +138,43 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
     .content {
-       display: flex;
+        display: flex;
         flex-direction: column;
     }
+
+    .contact-headline {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .left-side {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .right-side {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-headline {
+        font-size: 48px;
+    }
+
+    .text-container {
+        >.header {
+            font-size: 18px;
+
+        }
+    }
+
+
+
 }

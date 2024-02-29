@@ -112,18 +112,26 @@
 
 @media (max-width: 1500px) {
     .left-side {
-    >img { 
-        width: 350px;
-        height: 350px;
-    };
+        >img {
+            width: 350px;
+            height: 350px;
+        }
+
+        ;
     }
+
     .right-side {
         width: 400px;
     }
 }
 
 @media (max-width: 900px) {
+
     .content {
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
+
+
 }

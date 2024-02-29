@@ -108,13 +108,78 @@
     .headline {
         font-size: 45px;
     }
+
     .text-boxes {
-        width: 350px;
+        width: 600px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
     .main-content {
         flex-direction: column;
+    }
+
+    .headline {
+        margin-top: 100px;
+        font-size: 90px;
+    }
+
+
+    .right-side {
+        width: 100%;
+    }
+
+    .portrait {
+        >div:first-child {
+            margin-top: 50px;
+        }
+
+        >img {
+            width: 50%;
+            height: 5px;
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+    .portrait {
+        >img {
+            width: 20%;
+            height: 5px;
+        }
+    }
+
+    .headline {
+        font-size: 46px;
+    }
+}
+
+@media (max-width:650px) {
+    .right-side {
+        >img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .portrait {
+        >div:first-child {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+
+
+    .text-boxes {
+        width: 400px !important;
+
+        >.my-description,
+        .ideas-section,
+        .puzzle-section {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 }

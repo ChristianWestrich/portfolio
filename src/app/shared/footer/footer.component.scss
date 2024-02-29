@@ -51,3 +51,28 @@
 .footer-symbols {
     margin-right: 150px;
 }
+
+@media (max-width: 1000px) {
+    #name {
+        display: none;
+    }
+
+    // .logo, .footer-symbols {
+    //     margin-left: 20px;
+    //     margin-right: 20px;
+    // }
+}
+
+@media (max-width: 650px) {
+
+    .footer {
+        justify-content: space-between;
+    }
+        .logo, .footer-symbols {
+            margin-left: 120px;
+
+        }
+        .footer-symbols {
+            margin-right: 120px;
+        }
+}

@@ -16,8 +16,10 @@
 
 .icon-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 120px;
+    gap: 100px;
 }
 
 .right-side {
@@ -29,7 +31,7 @@
     color: white;
     font-size: 70px;
     font-weight: 700;
-    text-align: end !important;
+    text-align: end;
     width: 100%;
 }
 
@@ -37,7 +39,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 480px;
+    width: 550px;
     flex-direction: column;
     margin-right: 150px;
     opacity: 0;
@@ -50,11 +52,18 @@
     text-align: end
 }
 
+.img-box {
+    display: flex;
+    justify-content: end;
+    width: 20%;
+}
+
 .right-content-box {
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: row !important;
+    width: 100%;
 }
 
 .btn-box {
@@ -76,9 +85,7 @@
     z-index: -1;
 }
 
-.img-box {
-    width: 58px;
-}
+
 
 .animation-coming-in {
     animation: coming-in 1s ease-in-out;
@@ -97,12 +104,86 @@
 @media (max-width: 1500px) {
     .icon-wrapper {
         gap: 60px;
-        padding-left: 30px;
+
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
     .content-skills {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+
+    .left-side {
+        margin-left: 0px;
+    }
+
+    .right-side {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 100px;
+
+    }
+
+    .icon-wrapper {
+        padding: 0;
+        width: 100%;
+    }
+
+    .shadow-green img {
+        top: 250px;
+
+    }
+
+    .skill-container {
+        margin: 0;
+    }
+
+    .my-skills {
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .my-skills {
+        font-size: 46px;
+        text-align: end;
+    }
+
+
+
+
+    .get-in-touch-btn {
+        padding-left: 200px;
+    }
+
+    .shadow-green {
+        >img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .img-box {
+        display: none;
+    }
+
+    .skill-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        >.my-skills,
+        .text-box {
+            text-align: center;
+        }
+
+        >.get-in-touch-btn {
+            padding-left: 0px;
+        } 
+
     }
 }
