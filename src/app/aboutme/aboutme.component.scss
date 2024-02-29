@@ -189,6 +189,11 @@
         margin-left: 50px;
     }
 }
+@media (max-width: 450px) {
+    .main-content {
+        margin-left: 150px;
+    }
+}
 
 @media (max-width: 400px) {
     .main-content {

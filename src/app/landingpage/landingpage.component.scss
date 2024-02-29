@@ -294,9 +294,10 @@
 }
 
 @media (max-width: 650px) {
-    .symbols {
+    .scroll-bar {
         display: none;
     }
+
 
     .lets-talk-btn {
         margin-right: 100px;
@@ -321,11 +322,26 @@
     .lp-container {
         margin-left: 50px;
     }
+    .symbols {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:450px) {
+    .lets-talk-btn {
+        margin-right: 20px;
+    }
+    .symbols {
+        margin-left: 100px;
+    }
 }
 
 @media (max-width: 400px) {
     .lp-container {
         margin-left: 90px;
+    }
+    .symbols {
+        margin-left: 160px;
     }
 
     .lets-talk-btn {

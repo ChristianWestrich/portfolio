@@ -41,7 +41,6 @@
     align-items: center;
     width: 550px;
     flex-direction: column;
-    margin-right: 150px;
     opacity: 0;
 }
 
@@ -175,6 +174,19 @@
         margin-left: 150px;
     }
 }
+@media (max-width: 450px) {
+    .content-skills {
+        margin-left: 150px;
+    }
+    .icon-wrapper {
+        margin-left: 30px;
+    }
+    .get-in-touch-btn {
+        padding: 0;
+        margin-left: 120px;
+    }
+}
+
 
 @media (max-width: 400px) {
     .content-skills {

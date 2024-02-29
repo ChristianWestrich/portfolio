@@ -94,16 +94,28 @@
 }
 @media (max-width: 500px) {
     .portfolio-content {
-        margin-left: 50px;
+        margin-left: 70px;
+    }
+}
+@media (max-width: 450px) {
+    .portfolio-content {
+        margin-left: 130px;
+    }  
+    .portfolio-text {
+        width: 70%;
+        margin-left: 140px;
+        text-align: center;
     }
 }
 
+
 @media (max-width: 400px) {
     .portfolio-content {
-        margin-left: 160px;
+        margin-left: 100px;
 
     }
     .project-wrapper {
         margin-left: 150px;
     }
 }
+

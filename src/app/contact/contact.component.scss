@@ -174,14 +174,20 @@
 
         }
     }
-
-
-
 }
 
 @media (max-width: 500px) {
     .contact-content {
         margin-left: 50px;
+    }
+
+
+@media (max-width: 450px) {
+    .contact-content {
+        margin-left: 120px;
+    }
+    .contact-headline {
+        margin-left: 20px;
     }
 }
 
@@ -189,4 +195,5 @@
     .contact-content {
         margin-left: 190px;
     }
+}
 }
