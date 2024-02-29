@@ -183,3 +183,17 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .main-content {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-content {
+        margin-left: 180px;
+    }
+
+
+}

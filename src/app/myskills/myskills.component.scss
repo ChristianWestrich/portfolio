@@ -165,25 +165,20 @@
     }
 }
 
-@media (max-width: 510px) {
-    .img-box {
-        display: none;
+@media (max-width: 500px) {
+    .content-skills {
+        margin-left: 50px;
     }
 
-    .skill-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        >.my-skills,
-        .text-box {
-            text-align: center;
-        }
-
-        >.get-in-touch-btn {
-            padding-left: 0px;
-        } 
-
+    .get-in-touch-btn {
+        padding: 0;
+        margin-left: 150px;
     }
+}
+
+@media (max-width: 400px) {
+    .content-skills {
+        margin-left: 180px;
+    }
+
 }

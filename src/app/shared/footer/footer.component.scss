@@ -66,13 +66,41 @@
 @media (max-width: 650px) {
 
     .footer {
+        display: flex;
         justify-content: space-between;
     }
-        .logo, .footer-symbols {
-            margin-left: 120px;
 
-        }
-        .footer-symbols {
-            margin-right: 120px;
-        }
+    .footer-symbols {
+        margin-right: 60px;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        margin-left: 120px;
+    }
+
+    .footer-symbols {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo {
+        margin-left: 200px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .logo {
+        margin-left: 250px;
+    }
+
+
 }

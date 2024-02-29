@@ -50,8 +50,11 @@
 
 .lp-right-side {
     display: flex;
+    justify-content: end;
     z-index: 2;
     width: 50%;
+
+
 }
 
 .headline {
@@ -163,8 +166,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 150px;
-    bottom: 250px;
+    right: 100px;
+    bottom: 0px;
 
     >.arrows {
         padding-left: 5px;
@@ -189,7 +192,6 @@
     #left-side-img {
         width: 350px;
         height: 500px;
-        margin-left: 150px;
         z-index: 2;
         border-bottom-left-radius: 100px;
         border-bottom-right-radius: 100px;
@@ -203,9 +205,6 @@
         }
     }
 
-    .lp-right-side {
-        padding-left: 250px;
-    }
 
     .i-am {
         font-size: 56px;
@@ -255,9 +254,15 @@
         font-size: 42px;
     }
 
+    #left-side-img {
+        margin-left: 150px;
+
+
+    }
+
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
     .lp-container {
         flex-direction: column;
     }
@@ -270,6 +275,7 @@
         width: 100%;
         height: 40vh;
     }
+
     .lp-right-side {
         width: 465px;
         padding: 0 0px 0 100px;
@@ -292,6 +298,10 @@
         display: none;
     }
 
+    .lets-talk-btn {
+        margin-right: 100px;
+    }
+
     .i-am {
         font-size: 36px;
         left: -60px;
@@ -304,5 +314,25 @@
 
     .profession {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lp-container {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .lp-container {
+        margin-left: 90px;
+    }
+
+    .lets-talk-btn {
+        margin-right: 40px;
+    }
+
+    .lp-right-side {
+        margin-left: 50px;
     }
 }

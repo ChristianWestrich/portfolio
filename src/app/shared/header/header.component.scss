@@ -109,3 +109,37 @@
 
 
 }
+
+@media (max-width: 650px) {
+
+  .header {
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 60px;
+
+  }
+
+  .language-select {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    margin-left: 200px;
+  }
+}

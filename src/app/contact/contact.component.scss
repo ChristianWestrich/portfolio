@@ -178,3 +178,15 @@
 
 
 }
+
+@media (max-width: 500px) {
+    .contact-content {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-content {
+        margin-left: 190px;
+    }
+}
