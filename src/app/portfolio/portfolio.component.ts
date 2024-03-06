@@ -19,7 +19,7 @@ export class PortfolioComponent{
       language: 'JavaScript, HTML, CSS',
       description: '',
       liveLink: 'https://www.christian-westrich.de/projects/Join/index.html',
-      gitLink: '',
+      gitLink: 'https://github.com/ChristianWestrich/DAjoin.git',
       imgLink: '../../assets/img/join.png',
     },
     {
