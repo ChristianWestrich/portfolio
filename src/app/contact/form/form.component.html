@@ -3,21 +3,21 @@
         <input type="text" #name="ngModel" id="name" [(ngModel)]="contactData.name"
             [ngClass]="{'invalid-input': name?.invalid && name?.touched}" name="name"
             placeholder="{{'contactform.placeholderName' | translate}}" required class="input-field">
-        <div class="validity-check" [style.opacity]="name?.invalid && name?.touched ? '1' : 0">
+        <div class="validity-check" [style.opacity]="name.invalid && name.touched ? '1' : 0">
             {{'contactform.name' | translate}}</div>
 
         <input type="email" id="email" #email="ngModel" [(ngModel)]="contactData.email"
             [ngClass]="{'invalid-input': email?.invalid && email?.touched}"
-            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" name="email"
+            email name="email"
             placeholder="{{'contactform.placeholderEmail' | translate}}" required class="input-field">
-        <div class="validity-check" [style.opacity]="email?.invalid && email?.touched ? '1' : 0">
+        <div class="validity-check" [style.opacity]="email.invalid && email.touched ? '1' : 0">
             {{'contactform.email' | translate}}</div>
 
         <textarea #message="ngModel" id="message" minlength="2" class="input-field"
             [ngClass]="{'invalid-input': message?.invalid && message?.touched}" name="message"
             placeholder="{{'contactform.placeholderMessage' | translate}}" [(ngModel)]="contactData.message"
             style="height:200px" required></textarea>
-        <div class="validity-check" [style.opacity]="message?.invalid && message?.touched ? '1' : 0">
+        <div class="validity-check" [style.opacity]="message.invalid && message.touched ? '1' : 0">
             {{'contactform.message' | translate}}</div>
 
         <div class="privacy-policy">
@@ -27,12 +27,12 @@
             </div>
 
             <div class="validity-check"
-                [style.opacity]="(email?.valid && name?.valid && message?.valid && !checkbox?.checked) ? 1 : 0">
+                [style.opacity]="(!email.invalid && !name.invalid && !message.invalid && !checkbox?.checked) ? 1 : 0">
                 {{'contactform.privacy4' | translate}}</div>
         </div>
 
         <input type="submit" value="{{'contactform.sending' | translate }}" name="submitButton"
-            [disabled]="!checkboxState && !contactForm.controls['email'].valid && !contactForm.controls['name'].valid && !contactForm.controls['message'].valid"
+            [disabled]="!checkboxState && email.valid && name.valid && !email.valid"
             class="submit-btn"
             [style.background-color]="(checkboxState && email?.valid && name?.valid && message?.valid) ? '#70E61C' : '#b6b6b6'">
     </form>
