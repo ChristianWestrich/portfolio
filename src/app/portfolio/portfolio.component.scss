@@ -84,7 +84,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
 
+    .content-skills {
+        margin-left: 100px;
     }
     .portfolio-text {
         width: 80%;
@@ -96,6 +99,12 @@
     .portfolio-content {
         margin-left: 70px;
     }
+    .portfolio-text {
+        width: 70%;
+        margin-left: 140px;
+        text-align: center;
+    }
+
 }
 @media (max-width: 450px) {
     .portfolio-content {
@@ -116,6 +125,16 @@
     }
     .project-wrapper {
         margin-left: 150px;
+    }
+    .portfolio-text {
+        width: 70%;
+        margin-left: 180px;
+        text-align: center;
+    }
+    .portfolio-headline {
+        >img:first-child {
+            width: 10%;
+        }
     }
 }
 

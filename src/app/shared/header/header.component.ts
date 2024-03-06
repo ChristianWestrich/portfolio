@@ -2,22 +2,34 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from '../../app.component';
-import { style } from '@angular/animations';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, TranslateModule],
+  imports: [RouterLink, TranslateModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   @Input() language = 'DE';
 
+  showOverlay = false;
+
+
   goTo(destination: string) {
     let target = document.querySelector(destination);
     if (target) {
       target.scrollIntoView();
+    }
+  }
+
+  openMobileMenu() {
+    this.showOverlay = !this.showOverlay;
+    if (this.showOverlay) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
     }
   }
 
@@ -38,7 +50,4 @@ export class HeaderComponent {
     }
   }
 
-  openMobileMenu() {
-    
-  }
 }

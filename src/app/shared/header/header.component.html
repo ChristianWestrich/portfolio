@@ -14,5 +14,28 @@
             <a [routerLink]="['/']" (click)="goTo('#portfolio')" class="portfolio">Portfolio</a>
         </div>
         <div class="language-select" (click)="translating()">{{language}}</div>
+        <div id="menu-toggle" (click)="openMobileMenu()">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" [ngClass]="{'active': showOverlay}" >
+    <div id="menu">
+        <div class="links-mobile">
+            <a [routerLink]="['/']" (click)="goTo('#aboutMe')" >{{'header.about' | translate}}</a>
+        </div>
+        <div class="links-mobile">
+            <a [routerLink]="['/']" (click)="goTo('#skills')" >Skills</a>
+        </div>
+        <div class="links-mobile">
+            <a [routerLink]="['/']" (click)="goTo('#portfolio')" >Portfolio</a>
+        </div>
+        <div class="links-mobile">
+            <a [routerLink]="['/']" (click)="goTo('#contact')" >{{"contact.contact" | translate}}</a>
+        </div>
     </div>
 </div>

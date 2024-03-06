@@ -21,6 +21,7 @@ form {
     }
 }
 
+
 .invalid-input {
     background-image: url(../../../assets/img/inputerror.png);
     background-position: 95% 50%;
@@ -115,6 +116,7 @@ form {
     a {
         color: $myPurple;
         text-decoration: none;
+        text-shadow: black 0.1em 0.1em 0.2em;
 
         &:hover {
             filter: contrast(2);

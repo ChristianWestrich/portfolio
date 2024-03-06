@@ -149,11 +149,11 @@
         text-align: end;
     }
 
-
-
-
     .get-in-touch-btn {
         padding-left: 200px;
+    }
+    .left-side {
+        margin-left: 100px;
     }
 
     .shadow-green {
@@ -166,12 +166,12 @@
 
 @media (max-width: 500px) {
     .content-skills {
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     .get-in-touch-btn {
         padding: 0;
-        margin-left: 150px;
+        margin-left: 160px;
     }
 }
 @media (max-width: 450px) {

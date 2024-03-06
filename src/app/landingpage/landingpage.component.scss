@@ -1,5 +1,6 @@
 @import '../../styles.scss';
 
+
 .lp-container {
     display: flex;
     justify-content: center;
@@ -300,7 +301,7 @@
 
 
     .lets-talk-btn {
-        margin-right: 100px;
+        margin-right: 50px;
     }
 
     .i-am {
@@ -316,39 +317,116 @@
     .profession {
         font-size: 28px;
     }
+
+    .bottom-lp {
+        @include dFlex();
+
+    }
+
+    .symbols {
+        @include dFlex();
+        flex-direction: column;
+        gap: 20px;
+
+        >img {
+            margin: 0
+        }
+    }
+
+    .symbols {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 100px;
+        margin-left: 40px;
+    }
+
+    .bottom-lp {
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    .symbol-elements {
+        margin-left: 50px;
+    }
+
 }
 
 @media (max-width: 500px) {
     .lp-container {
         margin-left: 50px;
     }
+    .lets-talk-btn {
+        margin-right: 20px;
+    }
+
     .symbols {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 100px;
         margin-left: 40px;
+    }
+
+    .bottom-lp {
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .symbol-elements {
+        margin-left: 50px;
     }
 }
 
 @media (max-width:450px) {
+
+    .lp-container {
+        margin-left: 150px;
+
+    }
     .lets-talk-btn {
         margin-right: 20px;
     }
+
     .symbols {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
         margin-left: 100px;
+    }
+
+    .bottom-lp {
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .symbol-elements {
+        margin-left: 50px;
     }
 }
 
 @media (max-width: 400px) {
     .lp-container {
-        margin-left: 90px;
-    }
-    .symbols {
-        margin-left: 160px;
+        margin-left: 150px;
     }
 
     .lets-talk-btn {
         margin-right: 40px;
     }
 
-    .lp-right-side {
+    .bottom-lp {
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .symbols {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+    .symbol-elements {
         margin-left: 50px;
     }
+
+
 }
