@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationStart, Router, RouterOutlet } from '@angular/router';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactComponent } from './contact/contact.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
@@ -24,9 +24,11 @@ export class AppComponent  {
 
   translation = "de";
 
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, private router: Router) {
     translate.setDefaultLang(this.translation);
-  }
-
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
+        window.scrollTo(0, 0);
+    }})}
 
 }

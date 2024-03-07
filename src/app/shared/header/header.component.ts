@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from '../../app.component';
@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   @Input() language = 'DE';
+  @ViewChild('checkbox', {static: false}) checkbox!: ElementRef;
 
   showOverlay = false;
 
@@ -21,6 +22,9 @@ export class HeaderComponent {
     let target = document.querySelector(destination);
     if (target) {
       target.scrollIntoView();
+      this.checkbox.nativeElement.checked = false;
+      this.showOverlay = false
+      document.body.style.overflow = "auto"
     }
   }
 

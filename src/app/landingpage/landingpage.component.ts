@@ -16,7 +16,6 @@ import { ContactComponent } from '../contact/contact.component';
     MyskillsComponent,
     PortfolioComponent,
     ContactComponent,
-
   ],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.scss',
@@ -30,7 +29,4 @@ export class LandingpageComponent {
       target.scrollIntoView();
     }
   }
-
- 
 }
-

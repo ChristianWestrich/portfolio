@@ -1,196 +1,229 @@
-@import '../../styles.scss';
-
+@import "../../styles.scss";
 
 .content-skills {
-    @include dFlex();
-    margin-top: 250px;
-    max-width: 1920px;
-    position: relative;
+  @include dFlex();
+  margin-top: 250px;
+  max-width: 1920px;
+  position: relative;
 }
 
 .left-side {
-    width: 50%;
-    @include dFlex();
-    margin-left: 150px;
+  width: 50%;
+  @include dFlex();
 }
 
 .icon-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
 .right-side {
-    width: 50%;
-    flex-direction: column;
+  width: 50%;
+  flex-direction: column;
 }
 
 .my-skills {
-    color: white;
-    font-size: 70px;
-    font-weight: 700;
-    text-align: end;
-    width: 100%;
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: end;
+  width: 100%;
 }
 
 .skill-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 550px;
-    flex-direction: column;
-    opacity: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 550px;
+  flex-direction: column;
+  opacity: 0;
 }
 
 .text-box {
-    font-size: 16px;
-    font-weight: 400px;
-    color: white;
-    text-align: end
+  font-size: 16px;
+  font-weight: 400px;
+  color: white;
+  text-align: end;
 }
 
 .img-box {
-    display: flex;
-    justify-content: end;
-    width: 20%;
+  display: flex;
+  justify-content: end;
+  padding-left: 100px;
 }
 
 .right-content-box {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: row !important;
-    width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row !important;
 }
 
 .btn-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .get-in-touch-btn {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .shadow-green img {
-    position: absolute;
-    left: 150px;
-    top: 50px;
-    width: 500px;
-    height: 500px;
-    z-index: -1;
+  position: absolute;
+  left: 150px;
+  top: 50px;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
 }
 
-
-
 .animation-coming-in {
-    animation: coming-in 1s ease-in-out;
-    opacity: 1;
+  animation: coming-in 1s ease-in-out;
+  opacity: 1;
 }
 
 @keyframes coming-in {
-    0% {
-        opacity: 0.5;
-        scale: 0.1;
-        transform: translateY(-250px);
-    }
+  0% {
+    opacity: 0.5;
+    scale: 0.1;
+    transform: translateY(-250px);
+  }
 }
 
-
 @media (max-width: 1500px) {
-    .icon-wrapper {
-        gap: 60px;
-
-    }
+  .icon-wrapper {
+    gap: 60px;
+  }
 }
 
 @media (max-width: 1350px) {
-    .content-skills {
-        flex-direction: column-reverse;
-        margin-top: 100px;
-    }
+  .content-skills {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
 
-    .left-side {
-        margin-left: 0px;
-    }
+  .left-side {
+    margin-left: 0px;
+  }
 
-    .right-side {
-        width: 100%;
-        margin: 0;
-        padding-bottom: 100px;
+  .right-side {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 100px;
+  }
 
-    }
+  .icon-wrapper {
+    padding: 0;
+    width: 100%;
+  }
 
-    .icon-wrapper {
-        padding: 0;
-        width: 100%;
-    }
+  .shadow-green img {
+    top: 250px;
+  }
 
-    .shadow-green img {
-        top: 250px;
+  .skill-container {
+    margin: 0;
+  }
 
-    }
+  .my-skills {
+    text-align: center;
+  }
 
-    .skill-container {
-        margin: 0;
-    }
-
-    .my-skills {
-        text-align: center;
-    }
+  .skill-container {
+    width: auto;
+  }
 }
+
+
+@media (max-width: 900px) {}
+
 
 @media (max-width: 650px) {
-    .my-skills {
-        font-size: 46px;
-        text-align: end;
-    }
+  .my-skills {
+    font-size: 46px;
+    text-align: end;
+  }
 
-    .get-in-touch-btn {
-        padding-left: 200px;
-    }
-    .left-side {
-        margin-left: 100px;
-    }
+  .get-in-touch-btn {
+    padding-left: 200px;
+  }
 
-    .shadow-green {
-        >img {
-            width: 250px;
-            height: 250px;
-        }
+  .shadow-green {
+    >img {
+      width: 250px;
+      height: 250px;
     }
+  }
 }
+
+@media (max-width: 550px) {
+  .img-box {
+    padding-left: 20px;
+  }
+}
+
 
 @media (max-width: 500px) {
-    .content-skills {
-        margin-left: 100px;
-    }
+  .img-box {
+    display: none;
+  }
 
-    .get-in-touch-btn {
-        padding: 0;
-        margin-left: 160px;
-    }
+  .get-in-touch-btn {
+    padding-left: 0px;
+  }
+
+  .icon-wrapper {
+    gap: 30px;
+  }
+
+  .skill-container {
+    padding-right: 20px;
+    width: 450px;
+  }
+
+  .get-in-touch-btn {
+    padding-left: 0;
+  }
 }
-@media (max-width: 450px) {
-    .content-skills {
-        margin-left: 150px;
-    }
-    .icon-wrapper {
-        margin-left: 30px;
-    }
-    .get-in-touch-btn {
-        padding: 0;
-        margin-left: 120px;
-    }
-}
 
 
-@media (max-width: 400px) {
-    .content-skills {
-        margin-left: 180px;
-    }
+// @media (max-width: 500px) {
+//   .img-box {
+//     display: none;
+//   }
+// }
 
-}
+
+
+// @media (max-width: 500px) {
+//   .content-skills {
+//     margin-left: 100px;
+//   }
+
+//   .get-in-touch-btn {
+//     padding: 0;
+//     margin-left: 160px;
+//   }
+// }
+// @media (max-width: 450px) {
+//   .content-skills {
+//     margin-left: 150px;
+//   }
+//   .icon-wrapper {
+//     margin-left: 30px;
+//   }
+//   .get-in-touch-btn {
+//     padding: 0;
+//     margin-left: 120px;
+//   }
+// }
+
+// @media (max-width: 400px) {
+//   .content-skills {
+//     margin-left: 180px;
+//   }
+// }

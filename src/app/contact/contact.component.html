@@ -1,27 +1,31 @@
 <div class="contact-content" id="contact">
-    <div class="contact-headline">
-        <img src="../../assets/img/LINE 5.png" alt="">
-        <div>{{"contact.contact" | translate}}</div>
-    </div>
-    <div class="shadow-left">
-        <img src="../../assets/img/Purple shadow footer V2.png" alt="">
-    </div>
-    <div class="content">
-        <div class="left-side">
-            <div class="text-container">
-                <div class="header">{{"contact.header" | translate}}</div>
-                <div class="left-side-content">{{"contact.content" | translate}}</div>
-                <div class="bottom-line">{{"contact.bottom1" | translate}}<a
-                        href="mailto:christian.westrich@gmx.de">{{"contact.bottom2" | translate}}</a></div>
-            </div>
+  <div class="contact-headline">
+    <img src="/assets/img/LINE 5.png" alt="" />
+    <div>{{ "contact.contact" | translate }}</div>
+  </div>
+  <div class="shadow-left">
+    <img src="/assets/img/Purple shadow footer V2.png" alt="" />
+  </div>
+  <div class="content">
+    <div class="left-side">
+      <div class="text-container">
+        <div class="header">{{ "contact.header" | translate }}</div>
+        <div class="left-side-content">{{ "contact.content" | translate }}</div>
+        <div class="bottom-line">
+          {{ "contact.bottom1" | translate
+          }}<a href="mailto:christian.westrich@gmx.de">{{
+            "contact.bottom2" | translate
+          }}</a>
         </div>
-        <div class="right-side">
-            <div class="form">
-                <app-form></app-form>
-            </div>
-        </div>
-        <div class="go-up-btn">
-            <img src="../../assets/img/Go up button.png" (click)="goTo('#start')" alt="">
-        </div>
+      </div>
     </div>
+    <div class="right-side">
+      <div class="form">
+        <app-form></app-form>
+      </div>
+    </div>
+    <div class="go-up-btn">
+      <img src="/assets/img/Go up button.png" (click)="goTo('#start')" alt="" />
+    </div>
+  </div>
 </div>

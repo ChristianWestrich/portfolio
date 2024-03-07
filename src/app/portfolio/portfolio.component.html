@@ -1,23 +1,23 @@
-<div class="portfolio-content"  >
-    <div class="portfolio-heading">
-        <div id="portfolio" class="portfolio-headline">
-            <img src="../../assets/img/portfolio-left-line.png" alt="">
-            <span>Portfolio</span>
-            <img src="../../assets/img/portfolio-right-line.png" alt="">
-        </div>
-        <div class="portfolio-text">{{"portfolio.headline" | translate}}</div>
+<div class="portfolio-content">
+  <div class="portfolio-heading">
+    <div id="portfolio" class="portfolio-headline">
+      <img src="/assets/img/portfolio-left-line.png" alt="" />
+      <span>Portfolio</span>
+      <img src="/assets/img/portfolio-right-line.png" alt="" />
     </div>
-    <div class="project-wrapper"  (scroll)="$event">
-        @for (project of projects; track project; let i = $index) {
-        <app-projects [imgLink]="projects[i].imgLink" [projectName]="projects[i].projectName"
-            [usedLanguage]="projects[i].language" [description]="'portfolio.description' + i | translate"
-            [liveLink]="projects[i].liveLink" [gitLink]="projects[i].gitLink"></app-projects>
-        }
-    </div>
-    <div class="purple-shadow-top">
-        <img src="../../assets/img/Purple shadow footer V2.png" alt="">
-    </div>
-    <div class="green-shadow-bottom">
-        <img src="../../assets/img/Green shadow 2.png" alt="">
-    </div>
+    <span class="portfolio-text">{{ "portfolio.headline" | translate }}</span>
+  </div>
+  <div class="project-wrapper" (scroll)="($event)">
+    @for (project of projects; track project; let i = $index) {
+    <app-projects [imgLink]="projects[i].imgLink" [projectName]="projects[i].projectName"
+      [usedLanguage]="projects[i].language" [description]="'portfolio.description' + i | translate"
+      [liveLink]="projects[i].liveLink" [gitLink]="projects[i].gitLink"></app-projects>
+    }
+  </div>
+  <div class="purple-shadow-top">
+    <img src="/assets/img/Purple shadow footer V2.png" alt="" />
+  </div>
+  <div class="green-shadow-bottom">
+    <img src="/assets/img/Green shadow 2.png" alt="" />
+  </div>
 </div>

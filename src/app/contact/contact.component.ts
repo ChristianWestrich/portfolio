@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormComponent } from './form/form.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -9,11 +9,14 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit{
   goTo(destination: string) {
     let target = document.querySelector(destination);
     if (target) {
       target.scrollIntoView();
     }
+  }
+  ngOnInit() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
