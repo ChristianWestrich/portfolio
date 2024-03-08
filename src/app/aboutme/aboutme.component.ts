@@ -21,8 +21,6 @@ export class AboutmeComponent implements OnDestroy, OnInit {
           if (entry.target.classList.contains('left-side')) {
             entry.target.classList.add('animation-coming-in');
           }
-        } else {
-          entry.target.classList.remove('animation-coming-in');
         }
       });
     }, options);

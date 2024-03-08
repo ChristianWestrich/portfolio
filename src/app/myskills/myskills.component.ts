@@ -39,8 +39,6 @@ export class MyskillsComponent implements OnDestroy, OnInit {
           if (entry.target.classList.contains('skill-container')) {
             entry.target.classList.add('animation-coming-in');
           }
-        } else {
-          entry.target.classList.remove('animation-coming-in');
         }
       });
     }, options);

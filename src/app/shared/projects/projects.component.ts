@@ -44,11 +44,6 @@ export class ProjectsComponent implements OnInit, OnDestroy {
               'animation-class-right'
             );
           }
-        } else {
-          entry.target.classList.remove('animation-class-left');
-          this.rightSideElement.nativeElement.classList.remove(
-            'animation-class-right'
-          );
         }
       });
     }, options);

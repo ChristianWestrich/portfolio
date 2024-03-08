@@ -13,27 +13,44 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   @Input() language = 'DE';
-  @ViewChild('checkbox', {static: false}) checkbox!: ElementRef;
+  @ViewChild('checkbox', { static: false }) checkbox!: ElementRef;
 
   showOverlay = false;
 
-
   goTo(destination: string) {
     let target = document.querySelector(destination);
-    if (target) {
-      target.scrollIntoView();
+    if (target!.id === 'portfolio') {
+      const yoffset = -100;
+      window.scroll({
+        top: target!.getBoundingClientRect().top + window.scrollY + yoffset,
+        behavior: 'smooth',
+      });
       this.checkbox.nativeElement.checked = false;
-      this.showOverlay = false
-      document.body.style.overflow = "auto"
+      this.showOverlay = false;
+      document.body.style.overflow = 'auto';
+    } else if (target!.id === 'skills') {
+      const yoffset = -500;
+      window.scroll({
+        top: target!.getBoundingClientRect().top + window.scrollY + yoffset,
+        behavior: 'smooth',
+      });
+      this.checkbox.nativeElement.checked = false;
+      this.showOverlay = false;
+      document.body.style.overflow = 'auto';
+    } else if (target!) {
+      target!.scrollIntoView();
+      this.checkbox.nativeElement.checked = false;
+      this.showOverlay = false;
+      document.body.style.overflow = 'auto';
     }
   }
 
   openMobileMenu() {
     this.showOverlay = !this.showOverlay;
     if (this.showOverlay) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto'
+      document.body.style.overflow = 'auto';
     }
   }
 
@@ -53,5 +70,4 @@ export class HeaderComponent {
       this.language = 'EN';
     }
   }
-
 }

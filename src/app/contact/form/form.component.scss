@@ -153,3 +153,12 @@ form {
     bottom: 220px;
   }
 }
+@media (max-width: 320px) {
+  .submit-btn {
+    margin-bottom: 100px;
+  }
+
+  #pp-checkbox {
+    bottom: 270px;
+  }
+}
