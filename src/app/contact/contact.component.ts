@@ -10,12 +10,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent implements OnInit{
-  goTo(destination: string) {
-    let target = document.querySelector(destination);
-    if (target) {
-      target.scrollIntoView();
-    }
+  goTo() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  
   ngOnInit() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
