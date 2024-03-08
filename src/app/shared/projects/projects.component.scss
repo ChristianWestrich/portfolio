@@ -103,9 +103,9 @@
 
 @media (max-width: 1500px) {
   .left-side {
-    >img {
-      width: 350px;
-      height: 350px;
+    > img {
+      width: 320px;
+      height: 320px;
     }
   }
 
@@ -126,11 +126,21 @@
 
 @media (max-width: 500px) {
   .right-side {
-    width: 350px;
-    margin: 0 0 0 00px;
+    width: 250px;
+    margin: 0;
   }
+
   .left-side {
-    width: 350px;
-    margin: 0 0 0 0px;
+    width: 250px;
+    margin: 0;
+
+    > img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  .live-btn,
+  .git-btn {
+    width: 120px;
   }
 }

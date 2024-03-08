@@ -164,13 +164,13 @@
 
   .portrait {
     > div:first-child {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
   }
 
   .text-boxes {
-    width: 400px !important;
+    width: 400px;
 
     > .my-description,
     .ideas-section,
@@ -180,38 +180,25 @@
     }
   }
 }
+
 @media (max-width: 500px) {
-.headline {
-  font-size: 38px;
-}
-.text-boxes {
-  > .my-description,
-  .ideas-section,
-  .puzzle-section {
-   font-size: 16px;
+  .headline {
+    font-size: 38px;
+  }
+
+  .text-boxes {
+    width: 300px;
+    > .my-description,
+    .ideas-section,
+    .puzzle-section {
+      font-size: 16px;
+    }
   }
 }
+@media (max-width: 500px) {
+  .portrait {
+    > img {
+      width: 40px;
+    }
+  }
 }
-
-
-
-
-
-
-// @media (max-width: 500px) {
-//   .main-content {
-//     margin-left: 100px;
-//   }
-// }
-
-// @media (max-width: 450px) {
-//   .main-content {
-//     margin-left: 150px;
-//   }
-// }
-
-// @media (max-width: 400px) {
-//   .main-content {
-//     margin-left: 180px;
-//   }
-// }

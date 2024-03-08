@@ -51,7 +51,7 @@
     transform-origin: bottom left;
   }
 
-  >a {
+  > a {
     color: $myGreen;
     text-decoration: none;
   }
@@ -60,7 +60,6 @@
 .header {
   padding-left: 150px;
   padding-right: 150px;
-  margin-top: 50px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -121,7 +120,7 @@
     transform-origin: bottom left;
   }
 
-  >a {
+  > a {
     text-decoration: none;
   }
 }
@@ -181,23 +180,22 @@
   transform-origin: 0% 100%;
 }
 
-#menu-toggle input:checked~span {
+#menu-toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-15px, -10px);
   background: white;
 }
 
-#menu-toggle input:checked~span:nth-last-child(3) {
+#menu-toggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menu-toggle input:checked~span:nth-last-child(2) {
+#menu-toggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(-10px, 4px);
 }
 
 // Media querries
-
 
 @media (max-width: 1000px) {
   .links {
@@ -222,37 +220,12 @@
     margin-right: 60px;
   }
 }
+@media (max-width: 400px) {
+  .logo {
+    margin-left: 10px;
+  }
 
-
-
-
-
-// @media (max-width: 500px) {
-//   .header {
-//     margin-left: 80px;
-//   }
-
-//   #menu-toggle {
-//     margin-right: 50px;
-//   }
-// }
-
-// @media (max-width: 450px) {
-//   .header {
-//     margin-left: 150px;
-//   }
-
-//   #menu-toggle {
-//     margin-right: 50px;
-//   }
-// }
-
-// @media (max-width: 400px) {
-//   .header {
-//     margin-left: 200px;
-//   }
-
-//   #menu-toggle {
-//     margin-right: 20px;
-//   }
-// }
+  #menu-toggle {
+    margin-right: 10px;
+  }
+}

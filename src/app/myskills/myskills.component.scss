@@ -22,7 +22,6 @@
 
 .right-side {
   width: 50%;
-  flex-direction: column;
 }
 
 .my-skills {
@@ -59,7 +58,6 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  flex-direction: row !important;
 }
 
 .btn-box {
@@ -118,7 +116,6 @@
 
   .icon-wrapper {
     padding: 0;
-    width: 100%;
   }
 
   .shadow-green img {
@@ -127,20 +124,13 @@
 
   .skill-container {
     margin: 0;
+    width: unset;
   }
 
   .my-skills {
     text-align: center;
   }
-
-  .skill-container {
-    width: auto;
-  }
 }
-
-
-@media (max-width: 900px) {}
-
 
 @media (max-width: 650px) {
   .my-skills {
@@ -151,12 +141,11 @@
   .get-in-touch-btn {
     padding-left: 200px;
   }
-
-  .shadow-green {
-    >img {
-      width: 250px;
-      height: 250px;
-    }
+  .shadow-green img {
+    width: 200px;
+    height: 200px;
+    top: 500px;
+    left: 100px;
   }
 }
 
@@ -165,7 +154,6 @@
     padding-left: 20px;
   }
 }
-
 
 @media (max-width: 500px) {
   .img-box {
@@ -181,49 +169,17 @@
   }
 
   .skill-container {
+    width: 320px;
     padding-right: 20px;
-    width: 450px;
   }
 
   .get-in-touch-btn {
     padding-left: 0;
   }
 }
-
-
-// @media (max-width: 500px) {
-//   .img-box {
-//     display: none;
-//   }
-// }
-
-
-
-// @media (max-width: 500px) {
-//   .content-skills {
-//     margin-left: 100px;
-//   }
-
-//   .get-in-touch-btn {
-//     padding: 0;
-//     margin-left: 160px;
-//   }
-// }
-// @media (max-width: 450px) {
-//   .content-skills {
-//     margin-left: 150px;
-//   }
-//   .icon-wrapper {
-//     margin-left: 30px;
-//   }
-//   .get-in-touch-btn {
-//     padding: 0;
-//     margin-left: 120px;
-//   }
-// }
-
-// @media (max-width: 400px) {
-//   .content-skills {
-//     margin-left: 180px;
-//   }
-// }
+@media (max-width: 350px) {
+  .skill-container {
+    width: 280px;
+    padding-right: 20px;
+  }
+}

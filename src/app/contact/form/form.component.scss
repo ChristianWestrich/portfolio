@@ -136,3 +136,20 @@ form {
     }
   }
 }
+
+@media (max-width: 750px) {
+  #pp-checkbox {
+    bottom: 170px;
+  }
+}
+
+@media (max-width: 650px) {
+  #pp-checkbox {
+    bottom: 195px;
+  }
+}
+@media (max-width: 507px) {
+  #pp-checkbox {
+    bottom: 220px;
+  }
+}

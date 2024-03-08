@@ -16,6 +16,7 @@
   text-shadow: 1px 1px 2px;
   background-color: $myDarkBlue;
   max-width: 1920px;
+  z-index: 99;
 }
 
 .logo {
@@ -31,7 +32,7 @@
 }
 
 .imprint {
-  >a {
+  > a {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -54,51 +55,29 @@
   #name {
     display: none;
   }
-
-  // .logo, .footer-symbols {
-  //     margin-left: 20px;
-  //     margin-right: 20px;
-  // }
 }
 
 @media (max-width: 650px) {
   .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #name {
+    display: block;
   }
 
   .footer-symbols {
-    margin-right: 50px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .logo {
-    margin-left: 50px;
+    margin: 0;
+    margin-top: 10px;
   }
 }
-
-
-
-
-
-
-// @media (max-width: 500px) {
-//   .logo {
-//     margin-left: 160px;
-//   }
-
-//   .footer-symbols {
-//     margin-right: 80px;
-//   }
-// }
-
-// @media (max-width: 450px) {
-//   .logo {
-//     margin-left: 200px;
-//   }
-// }
-
-// @media (max-width: 400px) {
-//   .logo {
-//     margin-left: 250px;
-//   }
-// }
