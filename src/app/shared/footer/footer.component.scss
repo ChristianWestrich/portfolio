@@ -1,0 +1,83 @@
+@import "../../../styles.scss";
+
+.footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-top: 2px solid;
+  border-color: $myGreen;
+  margin-top: 50px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  text-shadow: 1px 1px 2px;
+  background-color: $myDarkBlue;
+  max-width: 1920px;
+  z-index: 99;
+}
+
+.logo {
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-name {
+  font-size: 32px;
+}
+
+.imprint {
+  > a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+      color: $myPurple;
+      transition: all 0.225s ease-in-out;
+      text-shadow: 1px 1px 2px;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.footer-symbols {
+  margin-right: 150px;
+}
+
+@media (max-width: 1000px) {
+  #name {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #name {
+    display: block;
+  }
+
+  .footer-symbols {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    margin: 0;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.content {
+  max-width: 1920px;
+  padding: 20px 20px 20px 20px;
+}
+
+* {
+  color: white;
+  font-family: "Poppins";
+  > a {
+    color: #9747ff;
+  }
+}
+
+h1 {
+  font-size: 64px;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 24px
+  }
+  h2 {
+    font-size: 16px
+  }
+}

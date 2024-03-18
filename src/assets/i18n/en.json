@@ -1,0 +1,100 @@
+{"header": {
+    "about": "About me"
+},
+"footer": {
+    "imprint": "Imprint"
+},
+"imprint": {
+    "imprint":"Imprint",
+    "information":"Information according to § 5 TMG",
+    "post": "Postal address",
+    "contact": "Contact",
+    "information2": "Information according to § 36 VSBG",
+    "law": "In accordance with § 36 VSBG (Consumer Dispute Resolution Act - Act on Alternative Dispute Resolution in Consumer Matters), the operator of this website declares:",
+    "obligated": "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
+    "foot1": "The imprint was created with the",
+    "generator": " Imprint-generator of the activeMind AG",
+    "foot2": "."
+},
+"skills": {
+    "skill": "My Skills",
+    "experience": "I have gained experience in building projects with various front end technologies and concepts.",
+    "touch": "Get in touch"
+},
+"portfolio": {
+    "headline": "This page is a sample of my work - please feel free to try them out.",
+    "description0": "'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'",
+    "description1": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and chillisauce to fight against the killer hen."
+},
+"aboutme": {
+    "headline": "About Me",
+    "description": "Hi, I'm a full-stack developer from the Nuremberg area. Computers & technology have always been a great passion of mine. I would like to share this passion with others.",
+    "ideas": "I love to create something new from an idea, to support and inspire people in their daily tasks through creative applications.",
+    "puzzle": "To this end, I have learned new technologies through my further training in order to not only build functional applications, but also to round them off with an appealing design and user-friendly operation."
+},
+"contact": {
+    "contact":"Contact",
+    "header":"Got a problem to solve ?",
+    "content":"Contact me through this form. I am interested in hearing you, knowing your ideas and contribution to your projects with my work.",
+    "bottom1":"Need a Full-Stack-Developer ?",
+    "bottom2":" Contact me!"
+},
+"contactform": {
+    "name":"How may address you ?",
+    "email":"Your email is required.",
+    "message":"Please describe what it is about.",
+    "privacy1":"I've read the",
+    "privacy2":"privacy policy",
+    "privacy3":"and agree to the processing of my data as outlined.",
+    "privacy4":"Please accept the privacy policy.",
+    "privacy5":"Thanks for your message!",
+    "sending":"Send message :)",
+    "placeholderName": "Your name",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message"
+},
+"pPolicy": {
+    "policy1": "Privacy policy",
+    "policy2": "The controller within the meaning of data protection laws, in particular the EU General Data Protection Regulation (GDPR), is",
+    "policy3": "Your rights as a data subject",
+    "policy4": "You can exercise the following rights at any time using the contact details provided for our data protection officer:",
+    "policy5": "Information about your data stored by us and its processing (Art. 15 GDPR),",
+    "policy6": "Correction of incorrect personal data (Art. 16 GDPR),",
+    "policy7": "Deletion of your data stored by us (Art. 17 GDPR),",
+    "policy8": "Restriction of data processing if we are not yet allowed to delete your data due to legal obligations (Art. 18 GDPR),",
+    "policy9": "Objection to the processing of your data by us (Art. 21 GDPR) and",
+    "policy10": "Data portability, provided that you have consented to the data processing or have concluded a contract with us (Art. 20 GDPR).",
+    "policy11": "If you have given us your consent, you can revoke it at any time with effect for the future.",
+    "policy12": "You can contact a supervisory authority at any time with a complaint, e.g. the competent supervisory authority of the federal state of your residence or the authority responsible for us as the responsible body.",
+    "policy13": "A list of supervisory authorities (for the non-public sector) with addresses can be found at: www.bfdi.bund.de.",
+    "policy14": "The data you enter will be stored for the purpose of individual communication with you. This requires you to provide a valid e-mail address and your name. This is used to assign the request and subsequently answer it. The provision of further data is optional.",
+    "policy15": "The data entered in the contact form is processed on the basis of a legitimate interest (Art. 6 para. 1 lit. f GDPR). By providing the contact form, we would like to make it easy for you to contact us. The information you provide will be stored for the purpose of processing your request and for possible follow-up questions. If you contact us to request a quote, the data entered in the contact form will be processed to carry out pre-contractual measures (Art. 6 para. 1 lit. b GDPR).",
+    "policy16": "Recipients of the data may be processors.",
+    "policy17": "Data will be deleted no later than 6 months after the request has been processed.",
+    "policy18": "If there is a contractual relationship, we are subject to the statutory retention periods according to the German Commercial Code (HGB) and delete your data after these periods have expired.",
+    "policy19": "The provision of your personal data is voluntary. However, we can only process your request if you provide us with your name, e-mail address and the reason for the request.",
+    "policy20": "To protect the security of your data during transmission, we use state-of-the-art encryption methods (e.g. SSL) via HTTPS.",
+    "policy21": "You have the right to object, on grounds relating to your particular situation, at any time to processing of personal data concerning you which is based on point (f) of Article 6(1) GDPR (data processing on the basis of a balancing of interests); this also applies to profiling based on this provision within the meaning of Article 4(4) GDPR.",
+    "policy22": "If you object, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for the processing which override your interests, rights and freedoms, or the processing serves the establishment, exercise or defense of legal claims.",
+    "policy23": "Recipient of an objection",
+    "policy24": "Changes to our privacy policy",
+    "policy25": "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g. when introducing new services. The new privacy policy will then apply to your next visit.",
+    "policy26": "Questions for the data protection officer",
+    "policy27": "If you have any questions about data protection, please send us an e-mail or contact the person responsible for data protection in our organization directly:",
+    "policy28": "The privacy policy was created with the help of activeMind AG, the experts for external data protection officers (version #2020-09-30).",
+    "policy29": "Contact form",
+    "policy30": "Nature and purpose of the processing:",
+    "policy31": "Legal basis",
+    "policy32": "Receiver",
+    "policy33": "By providing the contact form, we would like to make it easy for youSo to contact us. The information you provide will be stored for the purpose of processing your request and for possible follow-up questions.",
+    "policy34": "If you contact us to request a quote, the data entered in the contact form will be processed to carry out pre-contractual measures (Art. 6 para. 1 lit. b GDPR).",
+    "policy35": "Storage duration:",
+    "policy36": "Provision prescribed or required:",
+    "policy37": "SSL encryption",
+    "policy38": "Information about your right to object in accordance with Art. 21 GDPR",
+    "policy39": "Individual right of objection"   
+}
+}
+
+  
+

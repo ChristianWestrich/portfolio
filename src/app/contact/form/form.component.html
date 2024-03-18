@@ -1,0 +1,109 @@
+<div class="container">
+  <form
+    (ngSubmit)="onSubmit(contactForm)"
+    onsubmit="return false"
+    #contactForm="ngForm"
+  >
+    <input
+      type="text"
+      #name="ngModel"
+      id="name"
+      [(ngModel)]="contactData.name"
+      [ngClass]="{ 'invalid-input': name?.invalid && name?.touched }"
+      name="name"
+      placeholder="{{ 'contactform.placeholderName' | translate }}"
+      required
+      class="input-field"
+    />
+    <div
+      class="validity-check"
+      [style.opacity]="name.invalid && name.touched ? '1' : 0"
+    >
+      {{ "contactform.name" | translate }}
+    </div>
+
+    <input
+      type="email"
+      id="email"
+      #email="ngModel"
+      [(ngModel)]="contactData.email"
+      [ngClass]="{ 'invalid-input': email?.invalid && email?.touched }"
+      email
+      name="email"
+      placeholder="{{ 'contactform.placeholderEmail' | translate }}"
+      required
+      class="input-field"
+    />
+    <div
+      class="validity-check"
+      [style.opacity]="email.invalid && email.touched ? '1' : 0"
+    >
+      {{ "contactform.email" | translate }}
+    </div>
+
+    <textarea
+      #message="ngModel"
+      id="message"
+      minlength="2"
+      class="input-field"
+      [ngClass]="{ 'invalid-input': message?.invalid && message?.touched }"
+      name="message"
+      placeholder="{{ 'contactform.placeholderMessage' | translate }}"
+      [(ngModel)]="contactData.message"
+      style="height: 200px"
+      required
+    ></textarea>
+    <div
+      class="validity-check"
+      [style.opacity]="message.invalid && message.touched ? '1' : 0"
+    >
+      {{ "contactform.message" | translate }}
+    </div>
+
+    <div class="privacy-policy">
+      <input
+        type="checkbox"
+        id="pp-checkbox"
+        required
+        #checkbox
+        [(ngModel)]="checkboxState"
+        name="checkboxState"
+      />
+      <div>
+        {{ "contactform.privacy1" | translate
+        }}<a style="cursor: pointer;" routerLink="/privacyPolicy" (click)="scrollToTop()">{{ "contactform.privacy2" | translate }}</a
+        >{{ "contactform.privacy3" | translate }}
+      </div>
+
+      <div
+        class="validity-check"
+        [style.opacity]="
+          !email.invalid &&
+          !name.invalid &&
+          !message.invalid &&
+          !checkbox?.checked
+            ? 1
+            : 0
+        "
+      >
+        {{ "contactform.privacy4" | translate }}
+      </div>
+    </div>
+
+    <input
+      type="submit"
+      value="{{ 'contactform.sending' | translate }}"
+      name="submitButton"
+      [disabled]="!checkboxState && email.valid && name.valid && !email.valid"
+      class="submit-btn"
+      [style.background-color]="
+        checkboxState && email?.valid && name?.valid && message?.valid
+          ? '#70E61C'
+          : '#b6b6b6'
+      "
+    />
+  </form>
+  <div class="overlay-email" id="overlay-email" style="opacity: 0; z-index: -1">
+    {{ "contactform.privacy5" | translate }}
+  </div>
+</div>

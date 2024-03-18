@@ -1,0 +1,34 @@
+<div class="content-skills">
+  <div id="skills" class="left-side">
+    <div class="icon-wrapper">
+      @for (icon of skillIcons; track icon; let i = $index) {
+      <app-skill-icons
+        [iconSrc]="skillIcons[i].iconSrc"
+        [iconName]="skillIcons[i].iconName"
+      ></app-skill-icons>
+      }
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="right-content-box">
+      <div class="skill-container">
+        <div class="my-skills">{{ "skills.skill" | translate }}</div>
+        <div class="text-box">{{ "skills.experience" | translate }}</div>
+        <app-button
+          class="get-in-touch-btn"
+          [btnText]="GetInTouch"
+          (click)="goTo('#contact')"
+        ></app-button>
+      </div>
+      <div class="img-box">
+        <img src="/assets/img/line-myskills.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="shadow-green">
+    <img
+      src="/assets/img/Green shadow 3 (skills and portfolio section).png"
+      alt=""
+    />
+  </div>
+</div>

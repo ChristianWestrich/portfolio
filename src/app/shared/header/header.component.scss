@@ -1,0 +1,231 @@
+* {
+  color: white;
+}
+
+@import "../../../styles.scss";
+
+.logo {
+  font-size: 1.2rem;
+  color: #0e2431;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: $myDarkBlue, $alpha: 0.9);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  padding-top: 150px;
+  transition: display 0.5s ease-in-out;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.links-mobile {
+  cursor: pointer;
+  position: relative;
+  font-size: 36px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $myPurple;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  > a {
+    color: $myGreen;
+    text-decoration: none;
+  }
+}
+
+.header {
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 1px 1px 2px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: $myDarKBlueTransparent;
+  max-width: 1920px;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.language-select {
+  text-align: center;
+  background-image: url(../../../assets/img/german-flag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu {
+  @include dFlex();
+  font-weight: 400;
+  font-size: 23px;
+  gap: 29px;
+  width: fit-content;
+  height: 32px;
+}
+
+.links {
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $myGreen;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  > a {
+    text-decoration: none;
+  }
+}
+
+// Burger Menu for mobile
+
+#menu-toggle {
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  z-index: 5;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#menu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 15;
+  -webkit-touch-callout: none;
+}
+
+#menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-15px, -10px);
+  background: white;
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(-10px, 4px);
+}
+
+// Media querries
+
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 60px;
+  }
+
+  #menu-toggle {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .logo {
+    margin-left: 10px;
+  }
+
+  #menu-toggle {
+    margin-right: 10px;
+  }
+}
