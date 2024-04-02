@@ -1,33 +1,31 @@
-<div class="lp-container" id="start">
-  <div class="lp-left-side"></div>
-  <img id="left-side-img" src="/assets/img/me_landingpage.png" alt="" />
-
-  <div class="lp-right-side">
-    <div class="headline">
-      <div class="i-am">I am</div>
-      <div class="name">Christian Westrich</div>
-      <div class="profession">Full-Stack-Developer</div>
-      <app-button
-        [btnText]="btnText"
-        class="lets-talk-btn"
-        (click)="goTo('#contact')"
-      ></app-button>
+<div class="wrapper">
+  <div class="lp-container" id="start">
+    <div class="lp-left-side">
+      <img src="../../assets/img/shadow_landingpage.png" class="shadow">
+      <img id="left-side-img" src="/assets/img/Landingpage-portrait-comp.png" alt="" />
+    </div>
+    <div class="lp-right-side">
+      <div class="headline">
+        <div class="i-am">I am</div>
+        <div class="name">Christian Westrich</div>
+        <div class="profession">Full-Stack-Developer</div>
+        <app-button [btnText]="btnText" class="lets-talk-btn" (click)="goTo('#contact')"></app-button>
+      </div>
+    </div>
+    <div class="background-image"></div>
+  </div>
+  <div class="bottom-lp">
+    <div class="symbols">
+      <img src="/assets/img/line_landingpage.png" alt="" />
+      <app-symbols class="symbol-elements"></app-symbols>
+      <a href="mailto:kontakt@christian-westrich.de">kontakt&#64;christian-westrich.de</a>
+    </div>
+    <div class="scroll-bar">
+      <div>Scroll down</div>
+      <div class="arrows">>>></div>
     </div>
   </div>
-  <div class="background-image"></div>
-  <div class="scroll-bar">
-    <div>Scroll down</div>
-    <div class="arrows">>>></div>
-  </div>
 </div>
-<div class="bottom-lp">
-  <div class="symbols">
-    <img src="/assets/img/line_landingpage.png" alt="" />
-    <app-symbols class="symbol-elements"></app-symbols>
-    <a href="mailto:kontakt@christian-westrich.de">kontakt&#64;christian-westrich.de</a>
-  </div>
-</div>
-
 <app-aboutme></app-aboutme>
 <app-myskills></app-myskills>
 <app-portfolio></app-portfolio>

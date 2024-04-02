@@ -29,6 +29,11 @@ form {
   border-color: red !important;
 }
 
+#pp-checkbox {
+  position: absolute;
+
+}
+
 [type="checkbox"] {
   position: relative;
   z-index: 1;
@@ -36,8 +41,8 @@ form {
 
 [type="checkbox"] {
   position: absolute;
-  left: -30px;
-  bottom: 125px;
+  top: 0px;
+  left: -40px;
   z-index: 0;
 }
 
@@ -104,6 +109,7 @@ form {
   @include dFlex;
   flex-direction: column;
   color: white;
+  position: relative;
 
   a {
     color: $myPurple;
@@ -137,28 +143,10 @@ form {
   }
 }
 
-@media (max-width: 750px) {
-  #pp-checkbox {
-    bottom: 170px;
-  }
-}
 
-@media (max-width: 650px) {
-  #pp-checkbox {
-    bottom: 195px;
-  }
-}
-@media (max-width: 507px) {
-  #pp-checkbox {
-    bottom: 220px;
-  }
-}
+
 @media (max-width: 320px) {
   .submit-btn {
     margin-bottom: 100px;
-  }
-
-  #pp-checkbox {
-    bottom: 270px;
   }
 }

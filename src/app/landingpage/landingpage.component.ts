@@ -5,6 +5,7 @@ import { AboutmeComponent } from '../aboutme/aboutme.component';
 import { MyskillsComponent } from '../myskills/myskills.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ContactComponent } from '../contact/contact.component';
+import { FooterComponent } from '../shared/footer/footer.component';
 
 @Component({
   selector: 'app-landingpage',
@@ -16,6 +17,7 @@ import { ContactComponent } from '../contact/contact.component';
     MyskillsComponent,
     PortfolioComponent,
     ContactComponent,
+    FooterComponent,
   ],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.scss',
