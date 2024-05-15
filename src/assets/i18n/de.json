@@ -31,7 +31,8 @@
     "portfolio": {
         "headline": "Diese Seite ist ein Beispiel für meine Arbeit - bitte probieren Sie sie aus.",
         "description0": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag & Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-        "description1": "Ein einfaches Jump-and-Run-Spiel, dass auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Chilisoßen zu finden, um gegen die Killerhenne zu kämpfen."
+        "description1": "Ein einfaches Jump-and-Run-Spiel, dass auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Chilisoßen zu finden, um gegen die Killerhenne zu kämpfen.",
+        "description2": "Ein leistungsstarker und benutzerfreundlicher Slack-Klon, der Ihnen nahtlose Teamkommunikation, Zusammenarbeit und Organisation ermöglicht."
     
     },
     "contact": {

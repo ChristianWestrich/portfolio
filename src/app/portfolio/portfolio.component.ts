@@ -29,5 +29,14 @@ export class PortfolioComponent {
       gitLink: 'https://github.com/ChristianWestrich/El-Pollo-Loco.git',
       imgLink: '/assets/img/elpololoco.png',
     },
+    {
+      projectName: 'DABubble',
+      language: 'Angular, Typescript, Firebase',
+      description: '',
+      liveLink:
+        'https://www.christian-westrich.developerakademie.net/Angular/DABubble/index.html',
+      gitLink: 'https://github.com/ChristianWestrich/dabubble.git',
+      imgLink: '/assets/img/DABubble.png',
+    },
   ];
 }

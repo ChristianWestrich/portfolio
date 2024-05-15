@@ -24,7 +24,8 @@
 "portfolio": {
     "headline": "This page is a sample of my work - please feel free to try them out.",
     "description0": "'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'",
-    "description1": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and chillisauce to fight against the killer hen."
+    "description1": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and chillisauce to fight against the killer hen.",
+    "description2": "A powerful and user-friendly Slack clone that brings seamless team communication, collaboration, and organization to your fingertips."
 },
 "aboutme": {
     "headline": "About Me",
