@@ -34,7 +34,7 @@ export class PortfolioComponent {
       language: 'Angular, Typescript, Firebase',
       description: '',
       liveLink:
-        'https://www.christian-westrich.developerakademie.net/Angular/DABubble/index.html',
+        'https://www.christian-westrich.de/projects/DABubble/index.html',
       gitLink: 'https://github.com/ChristianWestrich/dabubble.git',
       imgLink: '/assets/img/DABubble.png',
     },
